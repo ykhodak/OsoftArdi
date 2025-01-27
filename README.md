@@ -6,10 +6,10 @@ Project was starter by Qt enthusiasts when C++11 became available. We wanted to 
 ![wspace view](./images/wspace.jpg)
 ![wspace view](./images/wspace-1.jpg)
 ![selector view](./images/selector-misc-1.jpg)
-![selector view](./images/selector-misc-2.jpg)
 ![selector view](./images/selector-misc-3.jpg)
 ![selector view](./images/selector-misc-4.jpg)
 ![selector view](./images/selector-misc-5.jpg)
-![selector view](./images/selector-misc-6.jpg)
-![selector view](./images/selector-misc.jpg)
+![board view](./images/board-is.jpg)
+![board view](./images/board-is-1.jpg)
+![board view](./images/board-is-2.jpg)
 
