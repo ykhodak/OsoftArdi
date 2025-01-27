@@ -4,7 +4,7 @@ Ardi - GMail client and organizer for notes, tasks, contacts, emails. Project cu
 ## Youtube demos
 [Boards](https://www.youtube.com/watch?v=PBuG7qXHCkc)\
 [Outline and Gmail](https://www.youtube.com/watch?v=oBwrf6iCZX8)\
-[Authorize Gmail access](https://www.youtube.com/watch?v=yLqbXYmIFag)\
+[Authorize Gmail access](https://www.youtube.com/watch?v=yLqbXYmIFag)
 
 
 ## Project Outline
