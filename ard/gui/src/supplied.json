@@ -1,0 +1,463 @@
+{
+    "annotation": "",
+    "color": 0,
+    "ftype": "0",
+    "hint": "Sortbox",
+    "items": [
+        {
+            "annotation": "",
+            "color": 0,
+            "ftype": "6",
+            "hint": "Sortbox",
+            "items": [
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "Ardi is outliner it has topics This is topic It can be expanded it can have subtopics",
+                    "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPidBcmRpJyBpcyBhIG5ldyBuYW1lIGZvciBvdXRsaW5lciBzb2Z0d2FyZSB0aGF0IHdhcyBvcmlnaW5hbGx5IGRldmVsb3BlZCBvbiBXaW5kb3dzIHVuZGVyIG5hbWUgJ0FyaWFkbmUgT3JnYW5pemVyJy4gU29tZXdoZXJlIGluIDIwMTAgdGhlIGNvcmUgY29kZSBzdGFydGVkIHRvIG1pZ3JhdGUgdG8gcGxhdGZvcm0gaW5kZXBlbmRlZCBzb2x1dGlvbnMgdG8gZW5hYmxlIHN1cHBvcnQgb24gVWJ1bnR1IGFuZCBNYWNPUywgbGF0ZXIgSU9TIGFuZCBBbmRyb2lkIHZlcnNpb25zIHdlcmUgZGVzaWduZWQgZm9yIGluIG9mZmljZSB0ZXN0aW5nLjwvc3Bhbj48L3A+PC9ib2R5PjwvaHRtbD4=",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "This is subtopic it can also have subtopics also it can have notes and notes with some formatting",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LWZhbWlseTonVWJ1bnR1JzsgZm9udC1zaXplOjEycHQ7Ij5UaGlzIGlzIG5vdGUsIGl0IGhhcyBzb21lIHRleHQuPC9zcGFuPjwvcD4KPHAgc3R5bGU9Ii1xdC1wYXJhZ3JhcGgtdHlwZTplbXB0eTsgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyBmb250LWZhbWlseTonVWJ1bnR1JzsgZm9udC1zaXplOjEycHQ7Ij48YnIgLz48L3A+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LWZhbWlseTonVWJ1bnR1JzsgZm9udC1zaXplOjEycHQ7Ij5BbnkgdG9waWMgY2FuIGhhdmUgbm90ZSBhbmQgeWVsbG93IGFubm90YXRpb24gY2FyZC4gVGhlIG5vdGUgY2FuIGhhdmUgcmVhY2ggZm9ybWF0dGluZyB0ZXh0IHdpdGggY29sb3JzLCBkaWZmZXJlbnQgZm9udCBzdHlsZXMgZXRjLjwvc3Bhbj48L3A+PC9ib2R5PjwvaHRtbD4=",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "VGhpcyBpcyBub3RlLCBpdCBoYXMgc29tZSB0ZXh0LgoKQW55IHRvcGljIGNhbiBoYXZlIG5vdGUgYW5kIHllbGxvdyBhbm5vdGF0aW9uIGNhcmQuIFRoZSBub3RlIGNhbiBoYXZlIHJlYWNoIGZvcm1hdHRpbmcgdGV4dCB3aXRoIGNvbG9ycywgZGlmZmVyZW50IGZvbnQgc3R5bGVzIGV0Yy4=",
+                            "title": "This is subtopic, it can also have subtopics, also it can have notes and notes with some formatting.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "This is annotation",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Topic can be a ToDo and it can have annotation",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPlRvRG8gaXMgYW4gYXR0cmlidXRlIHRoYXQgc2hvd3MgcHJvZ3Jlc3MgcGVyY2VudGFnZSBmcm9tIDAgdG8gMTAwJS4gMTAwJSBtZWFucyBpdCdzICdkb25lJy4gWW91IGNhbiBlZGl0IHByb2dyZXNzIGluIHBvcCB1cCBoZWFkZXIgYnkgY2xpY2tpbmcgb24gcHJvZ3Jlc3MgYmFyLjwvc3Bhbj48L3A+PC9ib2R5PjwvaHRtbD4=",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "VG9EbyBpcyBhbiBhdHRyaWJ1dGUgdGhhdCBzaG93cyBwcm9ncmVzcyBwZXJjZW50YWdlIGZyb20gMCB0byAxMDAlLiAxMDAlIG1lYW5zIGl0J3MgJ2RvbmUnLiBZb3UgY2FuIGVkaXQgcHJvZ3Jlc3MgaW4gcG9wIHVwIGhlYWRlciBieSBjbGlja2luZyBvbiBwcm9ncmVzcyBiYXIu",
+                            "title": "Topic can be a 'ToDo' and it can have annotation.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Topic can have color assigned to it and some other attributes like priority",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Topic can have color assigned to it and some other attributes, like priority.",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "plain-note": "J0FyZGknIGlzIGEgbmV3IG5hbWUgZm9yIG91dGxpbmVyIHNvZnR3YXJlIHRoYXQgd2FzIG9yaWdpbmFsbHkgZGV2ZWxvcGVkIG9uIFdpbmRvd3MgdW5kZXIgbmFtZSAnQXJpYWRuZSBPcmdhbml6ZXInLiBTb21ld2hlcmUgaW4gMjAxMCB0aGUgY29yZSBjb2RlIHN0YXJ0ZWQgdG8gbWlncmF0ZSB0byBwbGF0Zm9ybSBpbmRlcGVuZGVkIHNvbHV0aW9ucyB0byBlbmFibGUgc3VwcG9ydCBvbiBVYnVudHUgYW5kIE1hY09TLCBsYXRlciBJT1MgYW5kIEFuZHJvaWQgdmVyc2lvbnMgd2VyZSBkZXNpZ25lZCBmb3IgaW4gb2ZmaWNlIHRlc3Rpbmcu",
+                    "title": "Ardi is outliner, it has topics. This is topic. It can be expanded, it can have subtopics.",
+                    "todo": "0"
+                },
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "Getting Thing Done GTD",
+                    "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonVWJ1bnR1JzsgZm9udC1zaXplOjExcHQ7IGZvbnQtd2VpZ2h0OjQwMDsgZm9udC1zdHlsZTpub3JtYWw7Ij4KPHAgc3R5bGU9IiBtYXJnaW4tdG9wOjBweDsgbWFyZ2luLWJvdHRvbTowcHg7IG1hcmdpbi1sZWZ0OjBweDsgbWFyZ2luLXJpZ2h0OjBweDsgLXF0LWJsb2NrLWluZGVudDowOyB0ZXh0LWluZGVudDowcHg7Ij48c3BhbiBzdHlsZT0iIGZvbnQtc2l6ZToxMnB0OyBmb250LXdlaWdodDo2MDA7Ij5HZXR0aW5nIFRoaW5ncyBEb25lPC9zcGFuPjxzcGFuIHN0eWxlPSIgZm9udC1zaXplOjEycHQ7Ij4gKGFiYnJldmlhdGVkIHRvIEcuVC5ELikgaXMgYSB0aW1lIG1hbmFnZW1lbnQgbWV0aG9kLCBkZXNjcmliZWQgaW4gdGhlIGJvb2sgb2YgdGhlIHNhbWUgdGl0bGUgYnkgcHJvZHVjdGl2aXR5IGNvbnN1bHRhbnQgRGF2aWQgQWxsZW4uIFRoZSBHVEQgbWV0aG9kIHJlc3RzIG9uIHRoZSBpZGVhIG9mIG1vdmluZyBwbGFubmVkIHRhc2tzIGFuZCBwcm9qZWN0cyBvdXQgb2YgdGhlIG1pbmQgYnkgcmVjb3JkaW5nIHRoZW0gZXh0ZXJuYWxseSBhbmQgdGhlbiBicmVha2luZyB0aGVtIGludG8gYWN0aW9uYWJsZSB3b3JrIGl0ZW1zLjwvc3Bhbj48L3A+CjxwIHN0eWxlPSItcXQtcGFyYWdyYXBoLXR5cGU6ZW1wdHk7IG1hcmdpbi10b3A6MHB4OyBtYXJnaW4tYm90dG9tOjBweDsgbWFyZ2luLWxlZnQ6MHB4OyBtYXJnaW4tcmlnaHQ6MHB4OyAtcXQtYmxvY2staW5kZW50OjA7IHRleHQtaW5kZW50OjBweDsgZm9udC1zaXplOjEycHQ7Ij48YnIgLz48L3A+PC9ib2R5PjwvaHRtbD4=",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Ardi is based on GTD It seems as logical simple and easy to use workflow Also it is popular there are tons of links about it on Web",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Ardi is based on GTD. It seems as logical, simple and easy to use workflow. Also it is popular, there are tons of links about it on Web.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "We should mention that GTD was described in the book of the same title by productivity consultant David Allen",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "We should mention that GTD was described in the book of the same title by productivity consultant David Allen.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Sortbox or INBOX  the main folder in GTD where stuff comes in",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Sortbox or INBOX - the main folder in GTD, where stuff comes in",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "There are also Reference Someday Delegated and other folders A new folder can be easily created and added to the top folders toolbar",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "There are also 'Reference', 'Someday', Delegated and other folders. A new folder can be easily created and added to the top folders toolbar.",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "plain-note": "R2V0dGluZyBUaGluZ3MgRG9uZSAoYWJicmV2aWF0ZWQgdG8gRy5ULkQuKSBpcyBhIHRpbWUgbWFuYWdlbWVudCBtZXRob2QsIGRlc2NyaWJlZCBpbiB0aGUgYm9vayBvZiB0aGUgc2FtZSB0aXRsZSBieSBwcm9kdWN0aXZpdHkgY29uc3VsdGFudCBEYXZpZCBBbGxlbi4gVGhlIEdURCBtZXRob2QgcmVzdHMgb24gdGhlIGlkZWEgb2YgbW92aW5nIHBsYW5uZWQgdGFza3MgYW5kIHByb2plY3RzIG91dCBvZiB0aGUgbWluZCBieSByZWNvcmRpbmcgdGhlbSBleHRlcm5hbGx5IGFuZCB0aGVuIGJyZWFraW5nIHRoZW0gaW50byBhY3Rpb25hYmxlIHdvcmsgaXRlbXMu",
+                    "title": "Getting Thing Done (GTD)",
+                    "todo": "0"
+                },
+                {
+                    "annotation": "",
+                    "color": 5,
+                    "ftype": "0",
+                    "hint": "Gmail",
+                    "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPkFyZGkgY2FuIGFjdCBhcyBHbWFpbCBjbGllbnQgYW5kIGludGVncmF0ZSBlbWFpbCBtZXNzYWdlcyBpbiBvdXRsaW5lIGFuZCBHVEQgd29ya2Zsb3cuPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Ardi if granted access can read emails your Inbox and auto sort in other folders after creating filter",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPkFyZGkgaGVscHMgeW91IHRvIHB1dCBlbWFpbCBtZXNzYWdlcyBpbiBjb250ZXh0IC0gbWVzc2FnZXMgb3IgcmF0aGVyIHRocmVhZHMgb2YgbWVzc2FnZXMgY2FuIGJlIGdyb3VwZWQgaW4gZm9sZGVyIGFuZCBvcmdhbml6ZWQgYXMgdGFza3MgaW4gcHJvamVjdHMuPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "QXJkaSBoZWxwcyB5b3UgdG8gcHV0IGVtYWlsIG1lc3NhZ2VzIGluIGNvbnRleHQgLSBtZXNzYWdlcyBvciByYXRoZXIgdGhyZWFkcyBvZiBtZXNzYWdlcyBjYW4gYmUgZ3JvdXBlZCBpbiBmb2xkZXIgYW5kIG9yZ2FuaXplZCBhcyB0YXNrcyBpbiBwcm9qZWN0cy4=",
+                            "title": "Ardi, if granted access, can read emails your Inbox and auto sort in other folders after creating filter.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Select Email tab to read latest emails or Topics tab to switch back to the outline",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPlRvcGljcyBhbmQgRW1haWwgYXJlIG9uZSB0YWIgYXdheSBhbmQgdGhleSBzaGFyZSBmdW5jdGlvbmFsaXR5IHRhYnMgYW5kIGNvbnRyb2xzIHRoYXQgaXMgYmVjYXVzZSB0aGV5IGFyZSB0cmVhdGVkIGluIEFyZHkgaW4gc2FtZSB3YXksIHNvIHlvdSBjYW4gZWFzaWx5IGFwcGx5IFRvRG8sIGNvbG9yIG9yIGFubm90YXRpb24gdG8gYW4gZW1haWwgKG9yIHJhdGhlciB0byBlbWFpbHMgdGhyZWFkKSwgYWxzbyB5b3UgY2FuIHB1dCBlbWFpbCBpbiBjb250ZXh0IG9mIGEgcHJvamVjdCBvciByZWxhdGUgdG8gb3RoZXIgdG9waWNzIGluIG91dGxpbmUuPC9zcGFuPjwvcD4KPHAgc3R5bGU9Ii1xdC1wYXJhZ3JhcGgtdHlwZTplbXB0eTsgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyBmb250LXNpemU6MTJwdDsiPjxiciAvPjwvcD4KPHAgc3R5bGU9IiBtYXJnaW4tdG9wOjBweDsgbWFyZ2luLWJvdHRvbTowcHg7IG1hcmdpbi1sZWZ0OjBweDsgbWFyZ2luLXJpZ2h0OjBweDsgLXF0LWJsb2NrLWluZGVudDowOyB0ZXh0LWluZGVudDowcHg7Ij48c3BhbiBzdHlsZT0iIGZvbnQtc2l6ZToxMnB0OyI+QXJkaSBrbm93cyBob3cgdG8gbGluayBlbWFpbHMgPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "VG9waWNzIGFuZCBFbWFpbCBhcmUgb25lIHRhYiBhd2F5IGFuZCB0aGV5IHNoYXJlIGZ1bmN0aW9uYWxpdHkgdGFicyBhbmQgY29udHJvbHMgdGhhdCBpcyBiZWNhdXNlIHRoZXkgYXJlIHRyZWF0ZWQgaW4gQXJkeSBpbiBzYW1lIHdheSwgc28geW91IGNhbiBlYXNpbHkgYXBwbHkgVG9EbywgY29sb3Igb3IgYW5ub3RhdGlvbiB0byBhbiBlbWFpbCAob3IgcmF0aGVyIHRvIGVtYWlscyB0aHJlYWQpLCBhbHNvIHlvdSBjYW4gcHV0IGVtYWlsIGluIGNvbnRleHQgb2YgYSBwcm9qZWN0IG9yIHJlbGF0ZSB0byBvdGhlciB0b3BpY3MgaW4gb3V0bGluZS4KCkFyZGkga25vd3MgaG93IHRvIGxpbmsgZW1haWxz",
+                            "title": "Select Email tab to read latest emails or Topics tab to switch back to the outline.",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "plain-note": "QXJkaSBjYW4gYWN0IGFzIEdtYWlsIGNsaWVudCBhbmQgaW50ZWdyYXRlIGVtYWlsIG1lc3NhZ2VzIGluIG91dGxpbmUgYW5kIEdURCB3b3JrZmxvdy4=",
+                    "title": "Gmail",
+                    "todo": "0"
+                },
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "Projects  Plans",
+                    "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPlByb2plY3RzIGFyZSBzcGVjaWFsIGZvbGRlcnMgdGhhdCBhbGxvdyBtYW5hZ2luZyB0YXNrLW9yaWVudGVkIGRhdGEuIEFueSBBcmRpIFRvcGljIGlzIGJlY29taW5nIGFzIFRhc2sgaW5zaWRlIHByb2plY3QsIGFuZCBhcyBhIFRhc2sgaXQgY2FuIGhhdmUgc29tZSBleHRyYSBwcm9wZXJ0aWVzIC0gY29zdCwgZHVyYXRpb24sIGRlcGVuZGluZyBpdGVtcyBldGMuPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Every item in outline is a Topic and every topic can be ToDo but it can be also part of bigger project where one item depends on another where item are prioritized and can have price or duration attached to it",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPkl0IGlzIGVhc3kgdG8gbW92ZSB0b3BpY3MgaW4gYW5kIG91dCBvZiBwcm9qZWN0cywgZm9yIGV4YW1wbGUgeW91IGNhbiBtb3ZlIHRvcGljIGZyb20gJ01heWJlJyBmb2xkZXIgaW50byBuZXcgY29uc3RydWN0aW9uIHJlbGF0ZWQgcHJvamVjdCBpbiAnTW92ZScgdGFiIGFuZCBhc3NpZ24gY29zdCBhcyB3ZWxsIGFzIGR1cmF0aW9uIHRvIGl0Ljwvc3Bhbj48L3A+PC9ib2R5PjwvaHRtbD4=",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "SXQgaXMgZWFzeSB0byBtb3ZlIHRvcGljcyBpbiBhbmQgb3V0IG9mIHByb2plY3RzLCBmb3IgZXhhbXBsZSB5b3UgY2FuIG1vdmUgdG9waWMgZnJvbSAnTWF5YmUnIGZvbGRlciBpbnRvIG5ldyBjb25zdHJ1Y3Rpb24gcmVsYXRlZCBwcm9qZWN0IGluICdNb3ZlJyB0YWIgYW5kIGFzc2lnbiBjb3N0IGFzIHdlbGwgYXMgZHVyYXRpb24gdG8gaXQu",
+                            "title": "Every item in outline is a 'Topic' and every topic can be 'ToDo', but it can be also part of bigger project where one item depends on another, where item are prioritized and can have 'price' or 'duration' attached to it.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Projects can be displayed as network of items as table Gantt chars dependency diagram an other",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPlByb2plY3RzIGFyZSBzZWxlY3RlZCBhbmQgZWRpdGVkIGluICdQbGFuJyB0YWIsIGJ1dCBvbmNlIHByb2plY3QgaXMgc2VsZWN0ZWQgaXQgY2FuIGJlIGFsc28gZWRpdGVkIGluICdWaWV3JyBvciAnTW92ZScgdGFiIC0ganVzdCBjaG9vc2UgdGFiIGluIHNlbGVjdG9yPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "UHJvamVjdHMgYXJlIHNlbGVjdGVkIGFuZCBlZGl0ZWQgaW4gJ1BsYW4nIHRhYiwgYnV0IG9uY2UgcHJvamVjdCBpcyBzZWxlY3RlZCBpdCBjYW4gYmUgYWxzbyBlZGl0ZWQgaW4gJ1ZpZXcnIG9yICdNb3ZlJyB0YWIgLSBqdXN0IGNob29zZSB0YWIgaW4gc2VsZWN0b3I=",
+                            "title": "Projects can be displayed as network of items, as table, Gantt chars, dependency diagram an other.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Project Management was a natural expansion of GTD model for tasks that require better planning",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Project Management was a natural expansion of GTD model for tasks that require better planning.",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "plain-note": "UHJvamVjdHMgYXJlIHNwZWNpYWwgZm9sZGVycyB0aGF0IGFsbG93IG1hbmFnaW5nIHRhc2stb3JpZW50ZWQgZGF0YS4gQW55IEFyZGkgVG9waWMgaXMgYmVjb21pbmcgYXMgVGFzayBpbnNpZGUgcHJvamVjdCwgYW5kIGFzIGEgVGFzayBpdCBjYW4gaGF2ZSBzb21lIGV4dHJhIHByb3BlcnRpZXMgLSBjb3N0LCBkdXJhdGlvbiwgZGVwZW5kaW5nIGl0ZW1zIGV0Yy4=",
+                    "title": "Projects & Plans",
+                    "todo": "0"
+                },
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "Synchronization",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Why do I need synchronization",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Why do I need synchronization?",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Synchronization is for data sharing between different machines and devices",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Synchronization is for data sharing between different machines and devices.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Note that it is you personal data and you can synchronize via personal Google Drive area protected by Google",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Note that it is you personal data and you can synchronize via personal Google Drive area, protected by Google.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "You can share data between iphonebased Ardi and desktop version running of MacOS or Windows Current version doesnt support synchronization and data sharing between different accountsusers",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "You can share data between iphone-based Ardi and desktop version, running of MacOS or Windows. Current version doesn't support synchronization and data sharing between different accounts/users.",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "title": "Synchronization",
+                    "todo": "0"
+                },
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "Interface and usage",
+                    "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPldlIHRyeSB0byBrZWVwIHRoaW5ncyBzaW1wbGUgYXMgbXVjaCBhcyBwb3NzaWJsZS4gVG8gbWFuYWdlIGRhdGEgQXJkaSBoYXMgb25lIG91dGxpbmUgd2luZG93IHdpdGggdG9waWNzIGFuZCB0YWJzIHRvIHNlbGVjdCBzcGVjaWZpYyBmb2xkZXIgb3IgZnVuY3Rpb25hbCBzcGFjZS4gVGhlIG5hbWVzIG9mIGZ1bmN0aW9uYWwgdGFicyBhcmU6PC9zcGFuPjwvcD4KPHAgc3R5bGU9Ii1xdC1wYXJhZ3JhcGgtdHlwZTplbXB0eTsgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyBmb250LXNpemU6MTJwdDsiPjxiciAvPjwvcD4KPHVsIHN0eWxlPSJtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IC1xdC1saXN0LWluZGVudDogMTsiPjxsaSBzdHlsZT0iIGZvbnQtc2l6ZToxMnB0OyIgc3R5bGU9IiBtYXJnaW4tdG9wOjBweDsgbWFyZ2luLWJvdHRvbTowcHg7IG1hcmdpbi1sZWZ0OjBweDsgbWFyZ2luLXJpZ2h0OjBweDsgLXF0LWJsb2NrLWluZGVudDowOyB0ZXh0LWluZGVudDowcHg7Ij5WaWV3PC9saT4KPGxpIHN0eWxlPSIgZm9udC1zaXplOjEycHQ7IiBzdHlsZT0iIG1hcmdpbi10b3A6MHB4OyBtYXJnaW4tYm90dG9tOjBweDsgbWFyZ2luLWxlZnQ6MHB4OyBtYXJnaW4tcmlnaHQ6MHB4OyAtcXQtYmxvY2staW5kZW50OjA7IHRleHQtaW5kZW50OjBweDsiPk1vdmU8L2xpPgo8bGkgc3R5bGU9IiBmb250LXNpemU6MTJwdDsiIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+UGxhbjwvbGk+CjxsaSBzdHlsZT0iIGZvbnQtc2l6ZToxMnB0OyIgc3R5bGU9IiBtYXJnaW4tdG9wOjBweDsgbWFyZ2luLWJvdHRvbTowcHg7IG1hcmdpbi1sZWZ0OjBweDsgbWFyZ2luLXJpZ2h0OjBweDsgLXF0LWJsb2NrLWluZGVudDowOyB0ZXh0LWluZGVudDowcHg7Ij5HVEQ8L2xpPgo8bGkgc3R5bGU9IiBmb250LXNpemU6MTJwdDsiIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+R3JvdXA8L2xpPgo8bGkgc3R5bGU9IiBmb250LXNpemU6MTJwdDsiIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+Q29udGFjdHM8L2xpPjwvdWw+CjxwIHN0eWxlPSItcXQtcGFyYWdyYXBoLXR5cGU6ZW1wdHk7IG1hcmdpbi10b3A6MHB4OyBtYXJnaW4tYm90dG9tOjBweDsgbWFyZ2luLWxlZnQ6MHB4OyBtYXJnaW4tcmlnaHQ6MHB4OyAtcXQtYmxvY2staW5kZW50OjA7IHRleHQtaW5kZW50OjBweDsgZm9udC1zaXplOjEycHQ7Ij48YnIgLz48L3A+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPkluICdWaWV3JyB0YWIgd2UganVzdCBicm93c2UgYW5kIGVkaXQgdG9waWNzIGluIHNlbGVjdGVkIChob3N0ZWQpIGZvbGRlciwgJ01vdmUnIHRhYiBpcyB0byBtb3ZlIHRvcGljcyBhcm91bmQsICdQbGFuJyBpcyBmb3IgcHJvamVjdHMsICdHVEQnIHRvIHNob3cgd29ya2Zsb3csICdHcm91cCcgLSBmb3Igc2VhcmNoaW5nIGFuZCBncm91cGluZywgJ0NvbnRhY3RzJyAtIHRvIHNlZSBjb250YWN0cy48L3NwYW4+PC9wPjwvYm9keT48L2h0bWw+",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Its pretty simple outline  functional tabs on the left of main selector folder selection tabs on the right",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPlRoZXJlIGlzICdTZWxlY3Rvcicgd2hpY2ggdXN1YWxseSBvY2N1cGllcyByaWdodCBjb2x1bW4gb24geW91ciBzY3JlZW4gYnV0IGFzIHlvdSBvcGVuIHRvcGljIHRoZXkgd2lsbCBwb3B1cCBpbiBzZXBhcmF0ZSB3aW5kb3dzIHNvIHlvdSBjYW4gYXJyYW5nZSB0aGVtIGJ5IG1vdmluZyBvciB1c2UgYnVpbHQgaW4gYXV0b2FycmFuZ2Ugb3B0aW9uLjwvc3Bhbj48L3A+PC9ib2R5PjwvaHRtbD4=",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "VGhlcmUgaXMgJ1NlbGVjdG9yJyB3aGljaCB1c3VhbGx5IG9jY3VwaWVzIHJpZ2h0IGNvbHVtbiBvbiB5b3VyIHNjcmVlbiBidXQgYXMgeW91IG9wZW4gdG9waWMgdGhleSB3aWxsIHBvcHVwIGluIHNlcGFyYXRlIHdpbmRvd3Mgc28geW91IGNhbiBhcnJhbmdlIHRoZW0gYnkgbW92aW5nIG9yIHVzZSBidWlsdCBpbiBhdXRvYXJyYW5nZSBvcHRpb24u",
+                            "title": "It's pretty simple outline - functional tabs on the left of main selector, folder selection tabs on the right.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Outline next to it and then workspace When topic is selected in outline its note can be edited in popup window When email title is selected its context is displayed in popup",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPlBvcHVwIHdpbmRvd3Mgc3VwcG9ydCByZWFjaCB0ZXh0IGZvcm1hdHRpbmcgd2l0aCBjb2xvcnMgYW5kIHN0eWxlcyBzbyB0ZXh0IGNhbiBiZSBjdXN0b21pemVkIHRvIHlvdXIgbmVlZHMuPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "UG9wdXAgd2luZG93cyBzdXBwb3J0IHJlYWNoIHRleHQgZm9ybWF0dGluZyB3aXRoIGNvbG9ycyBhbmQgc3R5bGVzIHNvIHRleHQgY2FuIGJlIGN1c3RvbWl6ZWQgdG8geW91ciBuZWVkcy4=",
+                            "title": "Outline next to it and then workspace. When topic is selected in outline, it's note can be edited in popup window. When email title is selected its context is displayed in popup.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Some tabs are View  main outline space Move  outline with functions to move topics around  updown left or right",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPidWaWV3JyBhbmQgJ01vdmUnIHRhYnMgY2FuIGRpc3BsYXkgZm9sZGVycyBhbmQgcHJvamVjdC4gQW55IGZvbGRlciBjYW4gYmUgaG9pc3RlZCBhbmQgb3V0bGluZWQgaW4gU2VsZWN0b3IsIHNhbWUgZm9yIHByb2plY3QuIEFsc28sIGl0IGlzIGVhc3kgdG8gZWRpdCBhbmQgYWRkIG5ldyBGb2xkZXIuIFBsZWFzZSBmb2xsb3cgVmlld3xGb2xkZXJzIG1lbnUgaXRlbSB0byBtYW5hZ2UgZm9sZGVycy48L3NwYW4+PC9wPjwvYm9keT48L2h0bWw+",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "J1ZpZXcnIGFuZCAnTW92ZScgdGFicyBjYW4gZGlzcGxheSBmb2xkZXJzIGFuZCBwcm9qZWN0LiBBbnkgZm9sZGVyIGNhbiBiZSBob2lzdGVkIGFuZCBvdXRsaW5lZCBpbiBTZWxlY3Rvciwgc2FtZSBmb3IgcHJvamVjdC4gQWxzbywgaXQgaXMgZWFzeSB0byBlZGl0IGFuZCBhZGQgbmV3IEZvbGRlci4gUGxlYXNlIGZvbGxvdyBWaWV3fEZvbGRlcnMgbWVudSBpdGVtIHRvIG1hbmFnZSBmb2xkZXJzLg==",
+                            "title": "Some tabs are 'View' - main outline space, 'Move' - outline with functions to move topics around - up,down, left or right",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "There is also Plan tab that can have Gantt chart Tasks Table Network Graph etc",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPidQbGFuJyBpcyBhIHNwZWNpZmljIHRhYiBpbiBTZWxlY3RvciB0byB3b3JrIHdpdGggcHJvamVjdCwgeW91IGNhbiBtYWludGFpbiBhbnkgbnVtYmVyIG9mIHByb2plY3QgYW5kIGV2ZXIgcHJvamVjdCBjYW4gY29udGFpbiBhbnkgcmVhc29uYWJsZSBudW1iZXIgb2YgdGFza3Mgd2l0aCBleHRyYSBwcm9wZXJ0aWVzLCBsaWtlIGNvc3QsIGR1cmF0aW9uLCBwcm9ncmVzcyBldGMuPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "J1BsYW4nIGlzIGEgc3BlY2lmaWMgdGFiIGluIFNlbGVjdG9yIHRvIHdvcmsgd2l0aCBwcm9qZWN0LCB5b3UgY2FuIG1haW50YWluIGFueSBudW1iZXIgb2YgcHJvamVjdCBhbmQgZXZlciBwcm9qZWN0IGNhbiBjb250YWluIGFueSByZWFzb25hYmxlIG51bWJlciBvZiB0YXNrcyB3aXRoIGV4dHJhIHByb3BlcnRpZXMsIGxpa2UgY29zdCwgZHVyYXRpb24sIHByb2dyZXNzIGV0Yy4=",
+                            "title": "There is also 'Plan' tab that can have Gantt chart, Tasks Table, Network Graph, etc.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "GTD tab is to show Getting Things Done workflow diagram Also it can show projects and custom folders",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPidHVEQnIHRhYiBnaXZlcyB5b3UgYmlyZCB2aWV3IG91dGxvb2sgb24geW91ciBwcm9qZWN0cyBhbmQgZm9sZGVycy4gRnJvbSB0aGVyZSB5b3UgY2FuIHF1aWNrbHkganVtcCB0byB0aGUgcGFydGljdWxhciB0b3BpYyBvciBmb2xkZXIuPC9zcGFuPjwvcD48L2JvZHk+PC9odG1sPg==",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "J0dURCcgdGFiIGdpdmVzIHlvdSBiaXJkIHZpZXcgb3V0bG9vayBvbiB5b3VyIHByb2plY3RzIGFuZCBmb2xkZXJzLiBGcm9tIHRoZXJlIHlvdSBjYW4gcXVpY2tseSBqdW1wIHRvIHRoZSBwYXJ0aWN1bGFyIHRvcGljIG9yIGZvbGRlci4=",
+                            "title": "'GTD' tab is to show Getting Things Done workflow diagram. Also it can show projects and custom folders.",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Group tab has search different grouping tabs and TaskRing that shows table of ToDoitems in outline",
+                            "html-note": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwL3N0cmljdC5kdGQiPgo8aHRtbD48aGVhZD48bWV0YSBuYW1lPSJxcmljaHRleHQiIGNvbnRlbnQ9IjEiIC8+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KcCwgbGkgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KPC9zdHlsZT48L2hlYWQ+PGJvZHkgc3R5bGU9IiBmb250LWZhbWlseTonTVMgU2hlbGwgRGxnIDInOyBmb250LXNpemU6OC4yNXB0OyBmb250LXdlaWdodDo0MDA7IGZvbnQtc3R5bGU6bm9ybWFsOyI+CjxwIHN0eWxlPSIgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyI+PHNwYW4gc3R5bGU9IiBmb250LXNpemU6MTJwdDsiPidHcm91cCcgdGFiIGlzIGZvciBzZWFyY2hpbmcsIGdyb3VwaW5nIGFuZCBzZWxlY3RpbmcgYnkgcGFydGljdWxhciBwcm9wZXJ0eS4gV2UgY2FuIGhhdmUgJ1NlYXJjaCcsICdUYXNrIFJpbmcnLCAnQW5ub3RhdGVkJywgJ0NvbG9ycycgYW5kIG90aGVyIHRhYnMgZGVwZW5kaW5nIG9uIGVkaXRpb24uPC9zcGFuPjwvcD4KPHAgc3R5bGU9Ii1xdC1wYXJhZ3JhcGgtdHlwZTplbXB0eTsgbWFyZ2luLXRvcDowcHg7IG1hcmdpbi1ib3R0b206MHB4OyBtYXJnaW4tbGVmdDowcHg7IG1hcmdpbi1yaWdodDowcHg7IC1xdC1ibG9jay1pbmRlbnQ6MDsgdGV4dC1pbmRlbnQ6MHB4OyBmb250LXNpemU6MTJwdDsiPjxiciAvPjwvcD4KPHAgc3R5bGU9IiBtYXJnaW4tdG9wOjBweDsgbWFyZ2luLWJvdHRvbTowcHg7IG1hcmdpbi1sZWZ0OjBweDsgbWFyZ2luLXJpZ2h0OjBweDsgLXF0LWJsb2NrLWluZGVudDowOyB0ZXh0LWluZGVudDowcHg7Ij48c3BhbiBzdHlsZT0iIGZvbnQtc2l6ZToxMnB0OyI+J1NlYXJjaCcgd2lsbCBkaXNwbGF5IHNlYXJjaCByZXN1bHRzLCAnVGFzayBSaW5nJyAtIHRvcGljcyBpbiBwcm9ncmVzcyBhcyB3ZWxsIGFzIGN1bXVsYXRpdmUgdGFza3MgZnJvbSBhbGwgcHJvamVjdHMsICdBbm5vdGF0ZWQnIC0gdG9waWNzIHdpdGggYXR0YWNoZWQgYW5ub3RhdGlvbiBub3RlICh0aGUgdXN1YWxseSBjb21lcyBpbiB5ZWxsb3cgY29sb3JzKSwgJ0NvbG9ycycgLSB0b3BpY3Mgd2l0aCBjb2xvciBsYWJlbC48L3NwYW4+PC9wPjwvYm9keT48L2h0bWw+",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "plain-note": "J0dyb3VwJyB0YWIgaXMgZm9yIHNlYXJjaGluZywgZ3JvdXBpbmcgYW5kIHNlbGVjdGluZyBieSBwYXJ0aWN1bGFyIHByb3BlcnR5LiBXZSBjYW4gaGF2ZSAnU2VhcmNoJywgJ1Rhc2sgUmluZycsICdBbm5vdGF0ZWQnLCAnQ29sb3JzJyBhbmQgb3RoZXIgdGFicyBkZXBlbmRpbmcgb24gZWRpdGlvbi4KCidTZWFyY2gnIHdpbGwgZGlzcGxheSBzZWFyY2ggcmVzdWx0cywgJ1Rhc2sgUmluZycgLSB0b3BpY3MgaW4gcHJvZ3Jlc3MgYXMgd2VsbCBhcyBjdW11bGF0aXZlIHRhc2tzIGZyb20gYWxsIHByb2plY3RzLCAnQW5ub3RhdGVkJyAtIHRvcGljcyB3aXRoIGF0dGFjaGVkIGFubm90YXRpb24gbm90ZSAodGhlIHVzdWFsbHkgY29tZXMgaW4geWVsbG93IGNvbG9ycyksICdDb2xvcnMnIC0gdG9waWNzIHdpdGggY29sb3IgbGFiZWwu",
+                            "title": "'Group' tab has search, different grouping tabs and 'TaskRing' that shows table of ToDo-items in outline",
+                            "todo": "0"
+                        },
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Contacts are just contacts that can be used to send emails Contacts can be imported from other sources",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "'Contacts' are just contacts, that can be used to send emails. 'Contacts' can be imported from other sources.",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "plain-note": "V2UgdHJ5IHRvIGtlZXAgdGhpbmdzIHNpbXBsZSBhcyBtdWNoIGFzIHBvc3NpYmxlLiBUbyBtYW5hZ2UgZGF0YSBBcmRpIGhhcyBvbmUgb3V0bGluZSB3aW5kb3cgd2l0aCB0b3BpY3MgYW5kIHRhYnMgdG8gc2VsZWN0IHNwZWNpZmljIGZvbGRlciBvciBmdW5jdGlvbmFsIHNwYWNlLiBUaGUgbmFtZXMgb2YgZnVuY3Rpb25hbCB0YWJzIGFyZToKClZpZXcKTW92ZQpQbGFuCkdURApHcm91cApDb250YWN0cwoKSW4gJ1ZpZXcnIHRhYiB3ZSBqdXN0IGJyb3dzZSBhbmQgZWRpdCB0b3BpY3MgaW4gc2VsZWN0ZWQgKGhvc3RlZCkgZm9sZGVyLCAnTW92ZScgdGFiIGlzIHRvIG1vdmUgdG9waWNzIGFyb3VuZCwgJ1BsYW4nIGlzIGZvciBwcm9qZWN0cywgJ0dURCcgdG8gc2hvdyB3b3JrZmxvdywgJ0dyb3VwJyAtIGZvciBzZWFyY2hpbmcgYW5kIGdyb3VwaW5nLCAnQ29udGFjdHMnIC0gdG8gc2VlIGNvbnRhY3RzLg==",
+                    "title": "Interface and usage",
+                    "todo": "0"
+                }
+            ],
+            "otype": "1",
+            "title": "Sortbox",
+            "todo": "0"
+        },
+        {
+            "annotation": "",
+            "color": 2,
+            "ftype": "4",
+            "hint": "Reference",
+            "items": [
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "According to GTD Reference folder is right place for topics that dont contain any actionable information Its not something that seems to have some strategic importance or urgency so we capture it and thats it However if this isnt carried out properly it can jeopardize the rest of our GTD system and therefore our personal productivity",
+                    "items": [
+                    ],
+                    "otype": "1",
+                    "title": "According to GTD 'Reference' folder is right place for topics that don't contain any actionable information. It’s not something that seems to have some strategic importance or urgency, so we capture it and that’s it. However, if this isn’t carried out properly it can jeopardize the rest of our GTD system and, therefore, our personal productivity.",
+                    "todo": "0"
+                }
+            ],
+            "otype": "1",
+            "title": "Reference",
+            "todo": "0"
+        },
+        {
+            "annotation": "",
+            "color": 9,
+            "ftype": "3",
+            "hint": "Someday",
+            "items": [
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "Places to Visit",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Death Valley CA",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "Death Valley, CA",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "title": "Places to Visit",
+                    "todo": "0"
+                },
+                {
+                    "annotation": "",
+                    "color": 0,
+                    "ftype": "0",
+                    "hint": "Books to Read",
+                    "items": [
+                        {
+                            "annotation": "",
+                            "color": 0,
+                            "ftype": "0",
+                            "hint": "Sapiens by Yuval Noah Harari",
+                            "items": [
+                            ],
+                            "otype": "1",
+                            "title": "'Sapiens' by Yuval Noah Harari",
+                            "todo": "0"
+                        }
+                    ],
+                    "otype": "1",
+                    "title": "Books to Read",
+                    "todo": "0"
+                }
+            ],
+            "otype": "1",
+            "title": "Someday",
+            "todo": "0"
+        },
+        {
+            "annotation": "",
+            "color": 0,
+            "ftype": "7",
+            "hint": "Folders",
+            "items": [
+            ],
+            "otype": "1",
+            "title": "Folders",
+            "todo": "0"
+        }
+    ],
+    "otype": "7",
+    "title": "Sortbox",
+    "todo": "0"
+}

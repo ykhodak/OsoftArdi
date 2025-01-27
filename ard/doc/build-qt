@@ -1,0 +1,15 @@
+1.Windows
+
+configure -opensource -prefix "C:\Qt5.2" -no-opengl -no-openvg -no-angle
+nmake
+
+
+
+2.static build on Linux/X11
+
+configure -opensource  -nomake examples -nomake demos -no-qt3supp -prefix "$HOME/Qt/4.8"
+make
+make install
+export PATH=$HOME/Qt/4.8/bin:$PATH
+
+3.OSX - same as X11

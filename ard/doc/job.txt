@@ -1,0 +1,35 @@
+Osoft (publisher of Ardi) is looking for right person to fill in 'Sales & QA' position.
+
+Job description.
+Sales, technical support and QA of 'Ardi for Windows' software http://prokarpaty.net/.
+
+Requirement.
+Basic written English, enough to support client emails, maintain documentation, program registration and sales activities. Computer with Windows 7 or better installed. Enough space to test several cloud and offline softwares for comparison.
+
+Compensation.
+25% of 'Ardi for Windows' sales or 300$ a month (whichever is bigger) if there are not enough sales for the month. Paypal transfer for payments preferred but other options are also possible.
+
+Near time goal.
+Help in preparing next version of Ardi for active promotion in Google Ads and sales channels. The next version is scheduled in 6-8 months.
+
+Work schedule.
+Free - no requirement for time spent. No requirement for planning but some synchronization of tasks preferred. In other words - you decide how to sale, were to sale, when to sale. 
+
+QA and client support.
+It is common practice in software business to let client know he will be taking care of. If it is a sale email - just confirmation, saying hello and sending register code, some autoresponder can be installed later. Another exception - bugs resolution, we (osoft) will be fixing bugs but we will need help in dealing with client - you should create bugid ticket with description how to reproduce bug, maybe screenshots if possible. Also QA - testing resolved bugs. Bug resolution can take some time but client should be notified that osoft is working on it.
+
+
+Getting started
+Before selling something you have to know what you are selling and who are your clients. Below are basic topics that will help you to learn Ardi.
+
+1.Familiarize yourself with notes taking software (personal information managers) - Evernote and programs similar to it. Google it - look at 4-5 programs. Install them, learn how to use (very basic features), follow articles on the internet, follow blogs. Brifly compare features and GUI. Suggested programs: Evernote, InfoSelect, AllMyNotes, GTD (getting things done), Project management software. You don't have to know all features just get general ideas what they are for and how they deal with problems, what's the difference. Usually they are shareware and expire in 1 month, so 1 month should be enough to get idea about all of them.
+2.Install Ardi - see http://prokarpaty.net/
+3.Install PADManager - for software submission. Create PAD document and submit program to 8-10 most popular web sites. Usually it means creating xml-document with PADManager and pointing to it several software housing websites. We have something from old files, also Ardi website can be used.
+4.Create documentation about basic features, doesn't have to be big or complete. Osoft will help with documentation. Search for InfoSelect, compare documentation. Search for GTD - Getting Things Done, Project Management software etc.
+
+#1 can be ongoing process, but it's better to spend 1-2 days for each program at the very beginning
+#1 if possible create Excel, Word or HTML document comparing features in several programs with screen shots. The following programs can be analyzed first:
+Evernote, InfoSelect, AllMyNotes
+4-5 programs should be enough, describe what you personally like about them, what not, make screenshots. If programs is too greedy, requires payment or if you personally don't like it or if it requires extra resources, time to learn - avoid it.
+#3 we have to do in 2 months to get response and maybe first beta testers/users.
+#4 can be ongoing process, but we need some docs before running ads for next release in 6-8 months.

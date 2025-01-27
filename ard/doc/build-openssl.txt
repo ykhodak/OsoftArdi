@@ -1,0 +1,22 @@
+https://wiki.openssl.org/index.php/Compilation_and_Installation
+
+--- win32/release ---
+need libcrypto.lib, same lib is good for debug & release
+
+perl Configure VC-WIN32 no-asm no-shared --prefix=C:\projects\ariadne\3rd-party\openssl\install
+nmake
+nmake install
+
+--- OSX ---
+./Configure darwin64-x86_64-cc shared enable-ec_nistp_64_gcc_128 no-ssl2 no-ssl3 no-comp no-shared --prefix=/Users/yuriykhodak/projects/ariadne/3rd-party/openssl/install
+make depend
+sudo make install
+
+--- ios ---
+
+--- Ubuntu ---
+./config no-shared --prefix=$HOME/projects/ariadne/3rd-party/openssl/install
+
+./config no-ssl2 no-ssl3 no-comp no-shared --prefix=$HOME/projects/ariadne/3rd-party/openssl/install
+
+

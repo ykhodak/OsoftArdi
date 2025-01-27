@@ -1,0 +1,19 @@
+1.qjson
+
+=============== qmake solution ================
+for static library change src.pro
+#CONFIG += create_prl
+CONFIG += staticlib
+use https://github.com/cbranch/qjson-qmakefriendly
+
+================ cmake solution ===============
+-select static library - change src/CMakeLists.txt - remove SHARED option from add_library line
+
+mkdir build
+cd build
+cmake ..
+
+-manually create qjson/lib folder and copy libqjson.a from qjson/build/lib to qjson/lib
+
+================================
+

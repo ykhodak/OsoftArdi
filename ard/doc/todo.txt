@@ -1,0 +1,163 @@
+1.email page header - click to copy
+2.email page - 'reload email' menu option
+3.screenshots - add more email-based
+    
+    ------------------------------
+    get rid of TabControl::EType::SmallNote
+
+    https://youtu.be/mljRkMYBkJc
+
+Ardi - authorize Gmail access
+https://youtu.be/rwRSFAg5wx8
+
+Ardi - working with Outline and Gmail
+https://youtu.be/Xw5RIaMxqPs
+
+
+Ardi - working with Notes and Emails
+https://youtu.be/7Ly3D-Nxkew
+
+
+Ardi - working with Boards
+https://youtu.be/o899Tz-SLVY
+
+-----------------------------------------
+Hello
+
+I want to write a short review on Ardi - former Ariadne Organizer, since I was developer in Ariadne project and in InfoSelect before I can't really write as user of those products, most of the time I was on other side of the interface. In case of Ardi it is a little different, because I use it to read emails and maintain my notes. Ardi works with Gmail only but it is good enough for me. I imported my contacts and started maintaning notes in the middle of last year. It didn't have good support of popup notes back then and I liked minimalistic design of late Ariadne Organizer that offered somewhat decent management of popup windows. The developers team of Ardi did a good job on polishing interface and improving popup notes management - it happened last year and beginning of this year, now program looks mature and complete - as outliner and Notes manager, also it is good in processing emails. 
+
+the website https://prokarpaty.net has tutorial section and demo videos.
+    
+Yuriy Khodak
+
+-----------------------------------------
+
+Hi 
+
+I am developer of Ardi - The Organizer and want to introduce new version of the program which is better than previous one and almost 
+good as it's predecessors in their best time - Info Select and Ariadne Organizer. We, developers from Ardi team knew both products well when they were popular
+and trying to follow best routes proposed and tested before. Some things worked well in late Ariadne editions - single slim selector with a lot of popups windows,
+some solutions that were introduced in InfoSelect 20 years ago - like original Selector, email and data synchronizations have potential in modern time. We took some of the
+ideas, added a few new ones (Blackboard) and did everything in a new way - from a black page. So now we have gmail client in Ardi but without overhead
+of large data files, popup windows based layout with slim Selector but with added Tabspace and layout screens. We have topics, folders, bookmarks, emails, 
+contacts in Selector, also notes, annotations and todo attributes. We receitly sertified Ardi with Google for Gmail API and Microsoft to list it on Store.
+Ardi project is in late stage, it has stable interface, data and development cycle of 7 months. It is available for Windows and some betas for MacOS.
+
+Please follow us on http://prokarpaty.net/
+
+Yuriy
+
+
+    
+    Ardi - version 6.44 
+    
+    
+1.redo all the logview - get git of outlines nonsense, just plain text edit
+    
++restore notes positions and size on startup
+    
++ard::focusOnOutline doesn't work, we should put focus inside viewport, maybe..
+
+1.edit default font issue - after creating new note.
+4.popup relayout should prioritize and allocate largest layout for tspace
+5.contacts groups members scene works with global filter, if it is active view is messed up.
+
+-------------------------------
+Romania
+
+0.Chernivtsi -> Lázár Kastély (5h)
+1.Bran Castle (3h)
+2.PIATRA CRAIULUI National Park (1h)
+  3.a Dambovicioara Cave
+
+--1.CEAHLAU National Park (2h)
+
+
+--------------
+DesktopBrigde
+
+Windows installer
+https://www.windowscentral.com/how-convert-desktop-apps-universal-windows-platform-apps-desktop-bridge
+ a - add Containers
+ b - install the Windows 10 SDK
+ c - download DesktopAppConverter 
+ d - download base image
+
+
+1.intro - https://blogs.msdn.microsoft.com/appconsult/2016/10/13/desktop-bridge-the-bridge-between-win32-apps-and-the-universal-windows-platform/
+2.msi - https://blogs.msdn.microsoft.com/appconsult/2016/10/17/desktop-bridge-converting-an-installer/
+3.dependencies - https://blogs.msdn.microsoft.com/appconsult/2016/10/20/desktop-bridge-how-to-handle-c-and-c-dependencies-with-the-desktop-app-converter/
+4.top - https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter
+5.publish - https://blogs.msdn.microsoft.com/appconsult/2018/07/13/a-simpler-and-faster-way-to-publish-your-desktop-bridge-applications-on-the-microsoft-store/
+6.submit - https://blogs.msdn.microsoft.com/appconsult/2017/09/25/preparing-a-desktop-bridge-application-for-the-store-submission/
+
+
+GMail oriented productivity tool. 
+Ardi integrates cloud services with personal information manager, implements widely accepted and recognized data workflows - including project management charts & diagrams, getting things done (GTD) flow, outline organized data, etc. Ardi synchronizes Contacts, Emails, Projects, Notes, Topics and allows efficient and convenient offline and cloud-based data processing.
+
+
+------------------------------------------------------------------------
+1.open Power Shell as Admin
+2.build dac using command
+  
+DesktopAppConverter.exe -Installer C:\projects\ariadne\win10\msi-source\6.37\Ardi.msi -Destination C:\projects\ariadne\win10\dac-dest -PackageName "20253Osoft4Ardi.Ardi" -AppId "Osoft4Ardi.Ardi" -Publisher "CN=03841F9A-B4F5-4CD5-94FC-6828A373E0EF" -PackageDisplayName "Ardi" -AppDisplayName "Ardi - The Organizer" -PackagePublisherDisplayName "Osoft4Ardi" -Version 6.37.0.0 -MakeAppx 
+    
+3.login to msoft partner center as osoft4ardi@gmail.com
+    https://partner.microsoft.com/en-us/dashboard/windows/overview
+4.upload new package from C:\projects\ariadne\win10\dac-dest\20253Osoft4Ardi.Ardi
+
+5.might have to update based image if getting error E_NO_EXPANDED_BASE_IMAGE
+DesktopAppConverter.exe -Setup -BaseImage C:\projects\ariadne\win10\downloads\Windows_BaseImage_DAC_18362_V1.wim
+
+publisher display name: Osoft4Ardi
+------------------------------------------------------------------------
+
+    
+      
+-Sign -Verbose - don't need for local test, also don't need for store submission
+
+2.register local apx in PowerShel
+Add-AppxPackage –Register AppxManifest.xml
+
+
+    
+goal: Taking an existing Win32 installer and converting it into an AppX package through the Desktop App Converter tool or by leveraging manual conversion
+
+
+partner-center
+    https://partner.microsoft.com/en-us/dashboard/windows/overview
+
+msdn
+[1] https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter
+    https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-distribute
+
+blogs
+    https://blogs.msdn.microsoft.com/appconsult/2018/07/13/a-simpler-and-faster-way-to-publish-your-desktop-bridge-applications-on-the-microsoft-store/
+
+
+
+---------------------
+msoft account
+ 16462486567/Yri Kodak rr..sndBig1..7  /05/19/72
+
+
+from VS2015 command-line
+makeappx pack -d "PackageFiles" -p "<name_of_the_package>.appx" -l
+
+--------------------
+Create an MSIX package from any desktop installer.
+0.Change 'Version' propery on msi-project to match program version.
+1.make msi-install on desktop, ltop VS can't open install make project.
+2.uninstall Ardi on local machine
+3.run msix editor
+    -PackageName "20253Osoft4Ardi.Ardi" -AppId "Osoft4Ardi.Ardi" -Publisher "CN=03841F9A-B4F5-4CD5-94FC-6828A373E0EF" -PackageDisplayName "Ardi" -AppDisplayName "Ardi - The Organizer" -PackagePublisherDisplayName "Osoft4Ardi"
+4.login to msoft partner center as osoft4ardi@gmail.com
+    https://partner.microsoft.com/en-us/dashboard/windows/overview
+5.arditest05@gmail.com/Ardi$1234567 pwd is needed to certify app
+---------------------
+    
+Page/AZ
+1.https://www.antelopecanyon.com/
+2. PM]
+https://www.google.com/maps/place/Glen+Canyon+Dam+Overlook/@36.9133226,-111.4565388,14.75z/data=!4m5!3m4!1s0x87346b4ae3514927:0x4830fbce8cf2e424!8m2!3d36.9243239!4d-111.4784324
+3.https://www.google.com/maps/place/Wahweap+Overlook/@36.969171,-111.5010776,17z/data=!3m1!4b1!4m5!3m4!1s0x87346abdf73b5eb9:0xf5659e0e5f89ede5!8m2!3d36.9691667!4d-111.4988889

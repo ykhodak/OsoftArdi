@@ -1,0 +1,8 @@
+#!/bin/csh
+
+if ($#argv != 1) then
+   echo "Usage: $0 path-to-the-lib"
+   exit 0
+endif
+
+nm libgvc.so $1 | awk '{print $2, $3}' | grep "^T"

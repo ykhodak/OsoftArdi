@@ -1,0 +1,10 @@
+1.xml - extract tag names
+cat prj1.pod.xml | grep "</" | tr -d ' ' | cut -c 2- | cut -d '>' -f1
+
+2.xml - turn xml into QXmlStreamWriter feed
+cat prj1.pod.xml | grep "</" | tr -d ' ' | cut -c 2- | cut -d '>' -f1 | grep -v "/" | awk '{print "w->writeAttribute(\""$1"\", QString(\"%1\").arg());"}'
+
+3.xml  - turn xml into preprocessor symbols
+cat project.xml | grep "</" | tr -d ' ' | cut -c 2- | cut -d '>' -f1 | grep -v "/" | awk '{print "XWA(\""$1"\", \"\");"}'
+
+
