@@ -1,0 +1,297 @@
+namespace files
+    "Google GDrive files namespace"
+
+import gdrive
+import about
+import permissions
+
+struct ThumbnailInfo
+    image Bytes
+        "The thumbnail data encoded with URL-safe Base64 (RFC 4648 section 5)."
+    mimeType String
+        "The MIME type of the thumbnail."
+
+struct ContentHints
+    thumbnail ThumbnailInfo
+        "A thumbnail for a file."
+    indexableText String
+        "Text to be indexed for the file to improve fullText queries. This is limited to 128KB in length and may contain HTML elements."
+
+struct LocationData
+    latitude Float64
+        "latitude"
+    longitude Float64
+        "longitude"
+    altitude Float64
+        "altitude"
+
+struct ImageMediaMetadata
+    width UInt64
+        "The width of the image in pixels."
+    height UInt64
+        "The height of the image in pixels."
+    rotation UInt64
+        "The rotation in clockwise degrees from the image's original orientation."
+    location LocationData
+        "Geographic location information stored in the image."
+    time String
+        "The date and time the photo was taken (EXIF DateTime)."
+    cameraMake String
+        "The make of the camera used to create the photo."
+    cameraModel String
+        "The model of the camera used to create the photo."
+    exposureTime Float64
+        "The length of the exposure, in seconds."
+    flashUsed Boolean
+        "Whether a flash was used to create the photo."
+    focalLength Float64
+        "The focal length used to create the photo, in millimeters."
+    isoSpeed UInt64
+        "The ISO speed used to create the photo."
+    meteringMode String
+        "The metering mode used to create the photo."
+    sensor String
+        "The type of sensor used to create the photo."
+    exposureMode String
+        "The exposure mode used to create the photo."
+    colorSpace String
+        "The color space of the photo."
+    whiteBalance String
+        "The white balance mode used to create the photo."
+    exposureBias Float64
+        "The exposure bias of the photo (APEX value)."
+    maxApertureValue Float64
+        "The smallest f-number of the lens at the focal length used to create the photo (APEX value)."
+    subjectDistance UInt64
+        "The distance to the subject of the photo, in meters."
+    lens String
+        "The lens used to create the photo."
+
+struct VideoMediaMetadata
+    width UInt64
+        "The width of the video in pixels."
+    height UInt64
+        "The height of the video in pixels."
+    durationMillis UInt64
+        "The duration of the video in milliseconds."
+
+struct FileResource
+    id String
+        "The ID of the file."
+    kind String = "drive#file"
+        "This is always drive#file."
+    name String
+        "The name of the file. This is not necessarily unique within a folder."
+    mimeType String
+        "The MIME type of the file.
+Drive will attempt to automatically detect an appropriate value from uploaded content if no value is provided. The value cannot be changed unless a new revision is uploaded."
+    description String
+        "A short description of the file."
+    starred Boolean
+        "Whether the user has starred the file."
+    trashed Boolean
+        "Whether the file has been trashed, either explicitly or from a trashed parent folder. Only the owner may trash a file, and other users cannot see files in the owner's trash."
+    explicitlyTrashed Boolean
+        "Whether the file has been explicitly trashed, as opposed to recursively trashed from a parent folder."
+    parents List(String)
+        "The IDs of the parent folders which contain the file.
+If not specified as part of a create request, the file will be placed directly in the My Drive folder. Update requests must use the addParents and removeParents parameters to modify the values."
+    spaces List(String)
+        "The list of spaces which contain the file. The currently supported values are 'drive', 'appDataFolder' and 'photos'."
+    version UInt64
+        "A monotonically increasing version number for the file. This reflects every change made to the file on the server, even those not visible to the user."
+    webContentLink String
+        "A link for downloading the content of the file in a browser. This is only available for files with binary content in Drive."
+    webViewLink String
+        "A link for opening the file in a relevant Google editor or viewer in a browser."
+    iconLink String
+        "A static, unauthenticated link to the file's icon."
+    thumbnailLink String
+        "A short-lived link to the file's thumbnail, if available. Typically lasts on the order of hours."
+    viewedByMe Boolean
+        "Whether the file has been viewed by this user."
+    viewedByMeTime gdrive.GoogleTimestamp
+        "The last time the file was viewed by the user (RFC 3339 date-time)."
+    createdTime gdrive.GoogleTimestamp
+        "The time at which the file was created (RFC 3339 date-time)."
+    modifiedTime gdrive.GoogleTimestamp
+        "The last time the file was modified by anyone (RFC 3339 date-time).
+Note that setting modifiedTime will also update modifiedByMeTime for the user."
+    modifiedByMeTime gdrive.GoogleTimestamp
+        "The last time the file was modified by the user (RFC 3339 date-time)."
+    sharedWithMeTime gdrive.GoogleTimestamp
+        "The time at which the file was shared with the user, if applicable (RFC 3339 date-time)."
+    sharingUser about.UserInfo
+        "The user who shared the file with the requesting user, if applicable."
+    owners List(about.UserInfo)
+        "The owners of the file. Currently, only certain legacy files may have more than one owner."
+    lastModifyingUser about.UserInfo
+        "The last user to modify the file."
+    shared Boolean
+        "Whether the file has been shared."
+    ownedByMe Boolean
+        "Whether the user owns the file."
+    viewersCanCopyContent Boolean
+        "Whether users with only reader or commenter permission can copy the file's content. This affects copy, download, and print operations."
+    permissions List(permissions.ResourcePermission)
+        "The full list of permissions for the file. This is only available if the requesting user can share the file."
+    folderColorRgb String
+        "The color for a folder as an RGB hex string. The supported colors are published in the folderColorPalette field of the About resource. If an unsupported color is specified, the closest color in the palette will be used instead."
+    originalFilename String
+        "The original filename of the uploaded content if available, or else the original value of the name field. This is only available for files with binary content in Drive."
+    fullFileExtension String
+        "The full file extension extracted from the name field. May contain multiple concatenated extensions, such as 'tar.gz'. This is only available for files with binary content in Drive. This is automatically updated when the name field changes, however it is not cleared if the new name does not contain a valid extension."
+    fileExtension String
+        "The final component of fullFileExtension. This is only available for files with binary content in Drive."
+    md5Checksum String
+        "The MD5 checksum for the content of the file. This is only applicable to files with binary content in Drive."
+    size UInt64
+        "The size of the file's content in bytes. This is only applicable to files with binary content in Drive."
+    quotaBytesUsed UInt64
+        "The number of storage quota bytes used by the file. This includes the head revision as well as previous revisions with keepForever enabled."
+    headRevisionId String
+        "The ID of the file's head revision. This is currently only available for files with binary content in Drive."
+    contentHints ContentHints
+        "Additional information about the content of the file. These fields are never populated in responses."
+    imageMediaMetadata ImageMediaMetadata
+        "Additional metadata about image media, if available."
+    videoMediaMetadata VideoMediaMetadata
+        "Additional metadata about video media. This may not be available immediately upon upload."
+    isAppAuthorized Boolean
+        "Whether the file was created or opened by the requesting app."
+
+struct FileResourcesCollection
+    nextPageToken String
+        "The page token for the next page of files. This will be absent if the end of the files list has been reached."
+    kind String = "drive#fileList"
+        "This is always drive#fileList."
+    files List(FileResource)
+        "The page of files."
+
+struct CreateFileDetails
+    id String
+        "The ID of the file."
+    mimeType String
+        "The MIME type of the file.
+Drive will attempt to automatically detect an appropriate value from uploaded content if no value is provided. The value cannot be changed unless a new revision is uploaded."
+    description String
+        "A short description of the file."
+    contentHints ContentHints
+        "Additional information about the content of the file."
+    name String
+        "The name of the file. This is not necessarily unique within a folder."
+    originalFilename String
+        "The original filename of the uploaded content if available, or else the original value of the name field. This is only available for files with binary content in Drive."
+    parents List(String)
+        "The IDs of the parent folders which contain the file.
+If not specified as part of a create request, the file will be placed directly in the My Drive folder. Update requests must use the addParents and removeParents parameters to modify the values."
+    starred Boolean = false
+        "Whether the user has starred the file."
+
+struct UpdateFileDetails
+    name String
+        "The name of the file. This is not necessarily unique within a folder."
+    mimeType String
+        "The MIME type of the file.
+Drive will attempt to automatically detect an appropriate value from uploaded content if no value is provided. The value cannot be changed unless a new revision is uploaded."
+    description String
+        "A short description of the file."
+    contentHints ContentHints
+        "Additional information about the content of the file."
+    originalFilename String
+        "The original filename of the uploaded content if available, or else the original value of the name field. This is only available for files with binary content in Drive."
+
+struct GeneratedIdsCollection
+    kind String = "drive#generatedIds"
+        "This is always drive#generatedIds."
+    space String
+        "The type of file that can be created with these IDs. Supported values are 'drive' and 'appDataFolder'."
+    ids List(String)
+        "The IDs generated for the requesting user in the specified space."
+
+route list (gdrive.FileListArg, FileResourcesCollection, Void)
+    "Lists or searches files."
+    attrs
+        style = "getDrive"
+
+route get (gdrive.GetFileArg, FileResource, Void)
+    "Get file metadata."
+    attrs
+        style = "getDrive"
+
+route copy (gdrive.CopyFileArg, FileResource, FileResource)
+    "Creates a copy of a file and applies any requested updates with patch semantics."
+    attrs
+        style = "postDrive"
+
+route delete (gdrive.DeleteFileArg, Void, Void)
+    "Permanently deletes a file owned by the user without moving it to the trash. If the target is a folder, all descendants owned by the user are also deleted."
+    attrs
+        style = "deleteDrive"
+
+route emptyTrash (gdrive.EmptyTrashArg, Void, Void)
+    "Permanently deletes a file owned by the user without moving it to the trash. If the target is a folder, all descendants owned by the user are also deleted."
+    attrs
+        style = "deleteDrive"
+
+
+route create (gdrive.CreateFileArg, FileResource, Void)
+    "Creates a new file or folder."
+    attrs
+        style = "mpartUploadDrive"
+
+#route uploadFileMultipart (gdrive.MultipartUploadFileArg, FileResource, Void)
+#    "Upload file content and metadata."
+#    attrs
+#        style = "mpartUploadDrive"
+
+
+route uploadFileSimple (Void, FileResource, Void)
+    "Upload file content."
+    attrs
+        style = "simpleUploadDrive"
+
+
+route downloadFile (gdrive.DownloadFileArg, Void, Void)
+    "Get file media content."
+    attrs
+        style = "downloadDrive"
+
+
+route rename (gdrive.RenameFileArg, FileResource, Void)
+    "Rename file."
+    attrs
+        style = "updateDrive"
+
+route moveFile (gdrive.MoveFileArg, FileResource, Void)
+    "Move file."
+    attrs
+        style = "updateDrive"
+
+route updateFileMeta (gdrive.UpdateFileArg, FileResource, Void)
+    "Update file meta."
+    attrs
+        style = "updateDrive"
+
+
+route createFolder(gdrive.CreateFolderArg, FileResource, Void)
+    "Creates a new folder."
+    attrs
+        style = "postDriveB"
+
+
+route createEmptyFile (gdrive.CreateFileArg, FileResource, Void)
+    "Creates a new empty file providing metadata but to content."
+    attrs
+        style = "postDriveB"
+
+
+route generateIds (gdrive.GenerateIdArg, GeneratedIdsCollection, Void)
+    "Generates a set of file IDs which can be provided in create requests."
+    attrs
+        style = "getDrive"
+
+
+
+
+

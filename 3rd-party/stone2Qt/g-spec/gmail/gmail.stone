@@ -1,0 +1,49 @@
+namespace gmail
+
+alias Id = String(min_length=1)
+alias IdList = List(Id)
+
+struct IdArg
+    "id argument for query, there are some optional query parameters"
+
+struct AttachmentIdArg
+    "id argument for query attachment"
+
+
+struct ListArg
+    "list messages"
+
+struct HistoryListArg
+    "list history messages"
+
+struct DraftListArg
+    "list draft messages"
+
+struct ModifyMessageArg
+    "used to modify message"
+
+struct BatchModifyMessageArg
+    "used to modify batch of messages"
+
+struct SendMessageArg
+    "send new message request"
+
+struct SendMimeMessageArg
+    "send new mime message request"
+
+
+struct TrashMessageArg
+    "move message to trash request"
+
+struct UntrashMessageArg
+    "remove message from trash request"
+
+struct InsertMessageArg
+    "insert new message request"
+
+struct ImportMessageArg
+    "import messages argument"
+
+struct BatchDeleteMessageArg
+    "delete group of messages"
+

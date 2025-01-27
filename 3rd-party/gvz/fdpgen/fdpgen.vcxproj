@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{164F7F6D-5474-3EFC-BF76-98421A52D2B3}</ProjectGuid>
+    <RootNamespace>fdpgen</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\lib\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>__tmp\</IntermediateDirectory>
+    <PrimaryOutput>fdpgen</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\lib\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>__tmp\</IntermediateDirectory>
+    <PrimaryOutput>fdpgen</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">__tmp\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">fdpgen</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">__tmp\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fdpgen</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\graphviz-2.34.0;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\cdt;..\..\graphviz-2.34.0\lib\pack;..\..\graphviz-2.34.0\lib\xdot;..\..\graphviz-2.34.0\lib\fdpgen;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\gvc;..\..\graphviz-2.34.0\lib\neatogen;..\..\graphviz-2.34.0\lib\sparse;..\..\graphviz-2.34.0\lib\pathplan;C:\Qt\5.10.0\msvc2015\include;C:\Qt\5.10.0\msvc2015\include\QtGui;C:\Qt\5.10.0\msvc2015\include\QtANGLE;C:\Qt\5.10.0\msvc2015\include\QtCore;__tmp;\include;C:\Qt\5.10.0\msvc2015\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>__tmp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4100;4244;4018;4189;4305;4101;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>__tmp\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR="graphviz";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\fdpgen.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR=\"graphviz\";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\graphviz-2.34.0;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\cdt;..\..\graphviz-2.34.0\lib\pack;..\..\graphviz-2.34.0\lib\xdot;..\..\graphviz-2.34.0\lib\fdpgen;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\gvc;..\..\graphviz-2.34.0\lib\neatogen;..\..\graphviz-2.34.0\lib\sparse;..\..\graphviz-2.34.0\lib\pathplan;C:\Qt\5.10.0\msvc2015\include;C:\Qt\5.10.0\msvc2015\include\QtGui;C:\Qt\5.10.0\msvc2015\include\QtANGLE;C:\Qt\5.10.0\msvc2015\include\QtCore;__tmp;\include;C:\Qt\5.10.0\msvc2015\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>__tmp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4100;4244;4018;4189;4305;4101;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>__tmp\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR="graphviz";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\fdpgen.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR=\"graphviz\";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\clusteredges.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\comp.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\dbg.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\fdpinit.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\grid.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\layout.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\tlayout.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\fdpgen\xlayout.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

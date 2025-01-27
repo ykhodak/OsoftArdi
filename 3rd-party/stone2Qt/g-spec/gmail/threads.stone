@@ -1,0 +1,46 @@
+namespace threads
+    "Gmail threads namespace for data types and endpoint"
+
+import gmail
+import messages
+
+struct ThreadResource
+    id gmail.Id
+        "The unique ID of the thread."
+    snipped String
+        "A short part of the message text."
+    historyId UInt64
+        "The ID of the last history record that modified this thread."
+    messages List(messages.MessageResource)
+
+struct ThreadListRes
+    threads List(ThreadResource)
+        "List of threads."
+    nextPageToken String
+        "Token to retrieve the next page of results in the list."
+    resultSizeEstimate UInt64
+        "Estimated total number of results."
+
+route list (gmail.ListArg, ThreadListRes, Void)
+    attrs
+        style = "get"
+
+route get (gmail.IdArg, ThreadResource, Void)
+    "Get the specified message"
+    attrs
+        style = "get"
+
+route modify (gmail.ModifyMessageArg, ThreadResource, Void)
+    "Modifies the labels on the specified thread."
+    attrs
+        style = "postGmailB"
+
+route trash (gmail.TrashMessageArg, Void, Void)
+    "Moves the specified thread to the trash."
+    attrs
+        style = "post"
+
+route untrash (gmail.UntrashMessageArg, Void, Void)
+    "Removes the specified thread from the trash."
+    attrs
+        style = "post"

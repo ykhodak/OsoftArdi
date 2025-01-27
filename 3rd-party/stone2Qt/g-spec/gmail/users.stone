@@ -1,0 +1,20 @@
+namespace users
+    "Gmail namespace for data types and endpoint"
+
+struct GetProfileResponse
+    emailAddress String
+        "The user's email address."
+    messagesTotal UInt64
+        "The total number of messages in the mailbox."
+    threadsTotal UInt64
+        "The total number of threads in the mailbox."
+    historyId UInt64
+        "The ID of the mailbox's current history record."
+
+
+route profile (Void, GetProfileResponse, Void)
+    "Returns user profile information."    
+    attrs
+        style = "get"
+
+

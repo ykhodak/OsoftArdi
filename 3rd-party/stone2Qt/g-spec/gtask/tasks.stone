@@ -1,0 +1,90 @@
+namespace tasks
+    "Google tasks namespace for data types and endpoint"
+
+import gtask
+
+struct TaskLink
+    type String
+        "Type of the link, e.g. email."   
+    description String
+        "The description. In HTML speak: Everything between <a> and </a>."
+    link String
+        "The URL."
+
+
+struct TaskResource
+    id gtask.Id
+        "Task identifier."
+    title String
+        "Title of the task."
+    kind String = "tasks#task"
+        "Type of the resource. This is always tasks#task"
+    etag String
+        "ETag of the resource."    
+    updated gtask.GoogleTimestamp
+        "Last modification time of the task (as a RFC 3339 timestamp)."
+    selfLink String
+        "URL pointing to this task. Used to retrieve, update, or delete this task."
+    parent String
+        "Parent task identifier. This field is omitted if it is a top-level task. This field is read-only. Use the 'move' method to move the task under a different parent or to the top level."
+    position String
+        "String indicating the position of the task among its sibling tasks under the same parent task or at the top level. If this string is greater than another task's corresponding position string according to lexicographical ordering, the task is positioned after the other task under the same parent task (or at the top level). This field is read-only. Use the 'move' method to move the task to another position."
+    notes String
+        "Notes describing the task. Optional."
+    status String
+        "Status of the task. This is either needsAction or completed."
+    due gtask.GoogleTimestamp
+        "Due date of the task (as a RFC 3339 timestamp). Optional."
+    completed gtask.GoogleTimestamp
+        "Completion date of the task (as a RFC 3339 timestamp). This field is omitted if the task has not been completed."
+    deleted Boolean = false
+        "Flag indicating whether the task has been deleted. The default if False."
+    hidden Boolean = false
+        "Flag indicating whether the task is hidden. This is the case if the task had been marked completed when the task list was last cleared. The default is False. This field is read-only."
+    links List(TaskLink)
+
+
+struct TaskCollectionRes
+    kind String = "tasks#tasks"
+        "Type of the resource. This is always tasks#tasks."
+    etag String
+        "ETag of the resource."
+    nextPageToken String
+        "Token that can be used to request the next page of this result."
+    items List(TaskResource)
+        "Collection of task lists."
+
+route list (gtask.TaskListArg, TaskCollectionRes, Void)
+    "Returns all tasks in the specified task list"
+    attrs
+        style = "getTask"
+
+route get (gtask.TaskIdArg, TaskResource, Void)
+    "Returns the specified task."
+    attrs
+        style = "getTask"
+
+route insert (gtask.TaskListIdArg, TaskResource, TaskResource)
+    "Returns the specified task."
+    attrs
+        style = "postTask"
+
+route update (gtask.TaskIdArg, TaskResource, TaskResource)
+    "Updates the specified task."
+    attrs
+        style = "putTask"
+
+route delete (gtask.TaskIdArg, Void, Void)
+    "Deletes the specified task."
+    attrs
+        style = "deleteTask"
+
+route clear (gtask.TaskListClearArg, Void, Void)
+    "Deletes the specified task."
+    attrs
+        style = "postTask"
+
+route move (gtask.TaskMoveArg, TaskResource, Void)
+    "Updates the specified task."
+    attrs
+        style = "postTask"

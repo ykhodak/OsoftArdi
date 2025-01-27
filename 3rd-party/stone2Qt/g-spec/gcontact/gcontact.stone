@@ -1,0 +1,58 @@
+namespace gcontact
+
+alias Id = String(min_length=1)
+alias GoogleTimestamp = Timestamp("%Y-%m-%dT%H:%M:%SZ")
+
+struct ContactListArg
+    "list contactlist argument"
+
+struct CreateContactArg
+    "create contact argument"
+
+struct UpdateContactArg
+    "update contact argument"
+
+struct ContactList
+    "contactlist result"
+
+struct GroupList
+    "contactlist group result"
+
+struct BatchContactList
+    "batch contactlist result"
+
+struct BatchGroupList
+    "batch grouplist result"
+
+struct DeleteContactArg
+    "delete contact argument"
+
+struct ContactGroupListArg
+    "list contactlist group argument"
+
+struct CreateContactGroupArg
+    "create contact group argument"
+
+struct UpdateContactGroupArg
+    "update contact group argument"
+
+struct DeleteContactGroupArg
+    "delete contact group argument"
+
+struct DownloadPhotoArg
+    "download contact photo argument"
+
+struct UploadPhotoArg
+    "upload contact photo argument"
+
+struct DeletePhotoArg
+    "delete contact photo argument"
+
+struct BatchContactArg
+    "contacts batch argument"
+
+struct BatchGroupArg
+    "contacts group batch argument"
+
+
+

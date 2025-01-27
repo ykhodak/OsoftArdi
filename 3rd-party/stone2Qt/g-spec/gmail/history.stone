@@ -1,0 +1,40 @@
+namespace history
+    "Gmail history namespace for data types and endpoint"
+
+import gmail
+import messages
+
+struct LabelHistoryRecord
+    message messages.MessageResource
+        "Message resource"
+    labelIds List(String)
+        "Labels list"
+
+struct HistoryRecord
+    id gmail.Id
+        "The mailbox sequence ID."
+    messages List(messages.MessageResource)
+        "List of messages changed in this history record. The fields for specific change types, such as messagesAdded may duplicate messages in this field. We recommend using the specific change-type fields instead of this."
+    messagesAdded List(messages.MessageResource)
+        "Messages added to the mailbox in this history record."
+    messagesDeleted List(messages.MessageResource)
+        "Messages deleted (not Trashed) from the mailbox in this history record."
+    labelsAdded List(LabelHistoryRecord)
+        "Labels added to messages in this history record."
+    labelsRemoved List(LabelHistoryRecord)
+        "Labels removed from messages in this history record."
+
+
+struct HistoryRecordList
+    history List(HistoryRecord)
+        "List of history records. Any messages contained in the response will typically only have id and threadId fields populated."
+    nextPageToken String
+        "Page token to retrieve the next page of results in the list."
+    historyId String
+        "The ID of the mailbox's current history record."
+
+
+route list (gmail.HistoryListArg, HistoryRecordList, Void)
+    attrs
+        style = "get"
+

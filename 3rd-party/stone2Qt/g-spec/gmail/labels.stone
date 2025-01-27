@@ -1,0 +1,53 @@
+namespace labels
+    "Labels are used to categorize messages and threads within the user's mailbox"
+
+import gmail
+
+struct LabelResource
+    id gmail.Id
+        "The immutable ID of the label."
+    name String
+        "The display name of the label."
+    messageListVisibility String
+        "The visibility of messages with this label in the message list in the Gmail web interface. Acceptable values: 'hide' 'show'"
+    labelListVisibility String
+        "The visibility of the label in the label list in the Gmail web interface. Acceptable values: 'labelHide' 'labelShow' 'labelShowIfUnread'"
+    type String
+        "The owner type for the label. Acceptable values: 'system' 'user'"
+    messagesTotal UInt64
+        "The total number of messages with the label."
+    messagesUnread UInt64
+        "The number of unread messages with the label."
+    threadsTotal UInt64
+        "The number of unread threads with the label."
+
+struct LabelsResultList
+    labels List(LabelResource)
+
+
+route create (Void, LabelResource, LabelResource)
+    "Creates a new label."
+    attrs
+        style = "post"
+
+route delete (gmail.IdArg, Void, Void)
+    "Immediately and permanently deletes the specified label and removes it from any messages and threads that it is applied to."
+    attrs
+        style = "delete"
+
+route list(Void, LabelsResultList, Void)
+    "Lists all labels in the user's mailbox."
+    attrs
+        style = "get"
+
+route get (gmail.IdArg, LabelResource, Void)
+    "Get the specified label info"
+    attrs
+        style = "get"
+
+
+route update(gmail.IdArg, LabelResource, LabelResource)
+    "Updates the specified label"
+    attrs
+        style = "put"
+

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A355D36-B009-36DB-BE74-E29948C47D8A}</ProjectGuid>
+    <RootNamespace>neatogen</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\lib\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>__tmp\</IntermediateDirectory>
+    <PrimaryOutput>neatogen</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\lib\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>__tmp\</IntermediateDirectory>
+    <PrimaryOutput>neatogen</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">__tmp\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">neatogen</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">__tmp\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">neatogen</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\graphviz-2.34.0;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\cdt;..\..\graphviz-2.34.0\lib\pack;..\..\graphviz-2.34.0\lib\xdot;..\..\graphviz-2.34.0\lib\neatogen;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\gvc;..\..\graphviz-2.34.0\lib\sparse;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\ortho;..\..\graphviz-2.34.0\lib\sfdpgen;C:\Qt\5.10.0\msvc2015\include;C:\Qt\5.10.0\msvc2015\include\QtGui;C:\Qt\5.10.0\msvc2015\include\QtANGLE;C:\Qt\5.10.0\msvc2015\include\QtCore;__tmp;\include;C:\Qt\5.10.0\msvc2015\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>__tmp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4100;4244;4018;4189;4305;4101;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>__tmp\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR="graphviz";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\neatogen.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR=\"graphviz\";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\graphviz-2.34.0;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\cdt;..\..\graphviz-2.34.0\lib\pack;..\..\graphviz-2.34.0\lib\xdot;..\..\graphviz-2.34.0\lib\neatogen;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\gvc;..\..\graphviz-2.34.0\lib\sparse;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\ortho;..\..\graphviz-2.34.0\lib\sfdpgen;C:\Qt\5.10.0\msvc2015\include;C:\Qt\5.10.0\msvc2015\include\QtGui;C:\Qt\5.10.0\msvc2015\include\QtANGLE;C:\Qt\5.10.0\msvc2015\include\QtCore;__tmp;\include;C:\Qt\5.10.0\msvc2015\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>__tmp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4100;4244;4018;4189;4305;4101;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>__tmp\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR="graphviz";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\neatogen.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR=\"graphviz\";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\adjust.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\bfs.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\call_tri.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\circuit.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\closest.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\compute_hierarchy.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\conjgrad.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\constrained_majorization.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\constraint.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\delaunay.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\dijkstra.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\edges.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\embed_graph.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\geometry.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\heap.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\hedges.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\info.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\kkutils.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\legal.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\lu.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\matinv.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\matrix_ops.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\memory.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\multispline.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\neatoinit.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\neatosplines.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\opt_arrangement.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\overlap.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\pca.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\poly.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\printvis.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\quad_prog_solve.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\site.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\smart_ini_x.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\solve.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\stress.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\stuff.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\neatogen\voronoi.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

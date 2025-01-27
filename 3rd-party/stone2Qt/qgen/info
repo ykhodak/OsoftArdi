@@ -1,0 +1,16 @@
+Requirement
+============
+pyhton3, stone mudules, stone Dropbox API specification
+
+Usage
+===========
+To generate source from stone spec got to the spec folder and invoke command
+
+python -m stone.cli <path-to-q4s.stoneg.py> . *.stone
+or python3 if you are on Linux/OSX
+
+Sample
+=========
+python -m stone.cli -a :all ../qgen/q4s.stoneg.py . *.stone
+
+

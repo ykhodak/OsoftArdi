@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A8617117-9BC3-3023-BA70-7BEBF6A8D4FC}</ProjectGuid>
+    <RootNamespace>common</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\lib\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>__tmp\</IntermediateDirectory>
+    <PrimaryOutput>common</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\lib\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>__tmp\</IntermediateDirectory>
+    <PrimaryOutput>common</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">__tmp\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">common</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">__tmp\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">common</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\graphviz-2.34.0;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\cdt;..\..\graphviz-2.34.0\lib\pack;..\..\graphviz-2.34.0\lib\xdot;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\gvc;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\fdpgen;..\..\graphviz-2.34.0\lib\label;C:\Qt\5.10.0\msvc2015\include;C:\Qt\5.10.0\msvc2015\include\QtGui;C:\Qt\5.10.0\msvc2015\include\QtANGLE;C:\Qt\5.10.0\msvc2015\include\QtCore;__tmp;\include;C:\Qt\5.10.0\msvc2015\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>__tmp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4100;4244;4018;4189;4305;4101;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>__tmp\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR="graphviz";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\common.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR=\"graphviz\";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\graphviz-2.34.0;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\pathplan;..\..\graphviz-2.34.0\lib\cdt;..\..\graphviz-2.34.0\lib\pack;..\..\graphviz-2.34.0\lib\xdot;..\..\graphviz-2.34.0\lib\common;..\..\graphviz-2.34.0\lib\gvc;..\..\graphviz-2.34.0\lib\cgraph;..\..\graphviz-2.34.0\lib\fdpgen;..\..\graphviz-2.34.0\lib\label;C:\Qt\5.10.0\msvc2015\include;C:\Qt\5.10.0\msvc2015\include\QtGui;C:\Qt\5.10.0\msvc2015\include\QtANGLE;C:\Qt\5.10.0\msvc2015\include\QtCore;__tmp;\include;C:\Qt\5.10.0\msvc2015\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>__tmp\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4100;4244;4018;4189;4305;4101;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>__tmp\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR="graphviz";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\common.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;HAVE_CONFIG_H;GVLIBDIR=\"graphviz\";YY_NO_UNISTD_H;_LIB;CGRAPH_EXPORTS;WIN32_DLL;GVC_EXPORTS;GVPLUGIN_CORE_EXPORTS;GVPLUGIN_DOT_LAYOUT_EXPORTS;GVPLUGIN_NEATO_LAYOUT_EXPORTS;PATHPLAN_EXPORTS;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\args.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\arrows.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\colxlate.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\ellipse.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\emit.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\fontmetrics.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\geom.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\globals.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\htmllex.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\htmlparse.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\htmltable.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\input.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\intset.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\labels.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\memory.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\ns.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\output.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\pointset.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\postproc.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\psusershape.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\routespl.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\shapes.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\splines.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\taper.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\timing.c" />
+    <ClCompile Include="..\..\graphviz-2.34.0\lib\common\utils.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

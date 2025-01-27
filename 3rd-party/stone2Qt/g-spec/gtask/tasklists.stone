@@ -1,0 +1,53 @@
+namespace tasklists
+    "Google tasklists namespace for data types and endpoint"
+
+import gtask
+
+struct TaskListResource
+    id gtask.Id
+        "Task list identifier."
+    title String
+        "Title of the task list."
+    kind String = "tasks#taskList"
+        "Type of the resource. This is always tasks#taskList."
+    etag String
+        "ETag of the resource."
+    selfLink String
+        "URL pointing to this task list. Used to retrieve, update, or delete this task list."
+    updated gtask.GoogleTimestamp
+        "Last modification time of the task list (as a RFC 3339 timestamp)."
+
+struct TaskListCollectionRes
+    kind String = "tasks#taskLists"
+        "Type of the resource. This is always tasks#taskLists."
+    etag String
+        "ETag of the resource."
+    nextPageToken String
+        "Token that can be used to request the next page of this result."
+    items List(TaskListResource)
+        "Collection of task lists."
+
+route list (gtask.TasklistsListArg, TaskListCollectionRes, Void)
+    "Returns all the authenticated user's task lists."
+    attrs
+        style = "getTaskList"
+
+route get (gtask.TaskListContainerIdArg, TaskListResource, Void)
+    "Returns the specified tasklist."
+    attrs
+        style = "getTaskList"
+
+route insert (Void, TaskListResource, TaskListResource)
+    "Creates a new task list and adds it to the authenticated user's task lists"
+    attrs
+        style = "postTaskList"
+
+route update (gtask.TaskListContainerIdArg, TaskListResource, TaskListResource)
+    "Updates the authenticated user's specified task list"
+    attrs
+        style = "putTaskList"
+
+route delete (gtask.TaskListContainerIdArg, Void, Void)
+    "Updates the authenticated user's specified task list"
+    attrs
+        style = "deleteTaskList"

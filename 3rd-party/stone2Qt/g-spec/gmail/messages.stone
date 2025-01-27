@@ -1,0 +1,153 @@
+namespace messages
+    "Gmail messages namespace for data types and endpoint"
+
+import gmail
+
+struct MessagePayloadHeader
+    name String
+        "The name of the header before the : separator. For example, To."
+    value String
+        "The value of the header after the : separator. For example, someuser@example.com."
+
+
+struct MessageMimeBody
+    attachmentId String
+        "When present, contains the ID of an external attachment that can be retrieved in a separate messages.attachments.get request. When not present, the entire content of the message part body is contained in the data field."
+    size UInt64
+        "Total number of bytes in the body of the message part."
+    data Bytes
+        "The body data of a MIME message part. May be empty for MIME container types that have no message body or when the body data is sent as a separate attachment. An attachment ID is present if the body data is contained in a separate attachment."
+
+struct MessagePartBody
+    size UInt64
+        "Total number of bytes in the body of the message part."
+    data Bytes
+        "The body data of a MIME message part. May be empty for MIME container types that have no message body or when the body data is sent as a separate attachment. An attachment ID is present if the body data is contained in a separate attachment."
+    attachmentId String
+        "When present, contains the ID of an external attachment that can be retrieved in a separate messages.attachments.get request. When not present, the entire content of the message part body is contained in the data field."
+
+struct MessagePart
+    partId String
+        "ID of the part"
+    mimeType String
+        "mime type: text/plain, text/html"
+    filename String
+        "file name"
+    headers List(MessagePayloadHeader)
+        "list of headers in the part"    
+    body MessagePartBody
+        "body of the message"
+    parts List(MessagePart)
+        "The list of subparts in the part"
+
+
+struct MessagePayload
+    partId String
+        "The immutable ID of the message part."
+    mimeType String
+        "The MIME type of the message part."
+    filename String
+        "The filename of the attachment. Only present if this message part represents an attachment."
+    headers List(MessagePayloadHeader)
+        "List of headers on this message part. For the top-level message part, representing the entire message payload, it will contain the standard RFC 2822 email headers such as To, From, and Subject."
+    body MessageMimeBody
+        "The message part body for this part, which may be empty for container MIME message parts."
+    parts List(MessagePart)
+        "The list of parts in the message"
+
+struct MessageResource
+    id gmail.Id
+        "The immutable ID of the message."
+    threadId gmail.Id
+        "The ID of the thread the message belongs to. "
+    labelIds gmail.IdList
+        "List of IDs of labels applied to this message."
+    snippet String
+        "A short part of the message text."
+    historyId UInt64
+        "The ID of the last history record that modified this message."
+    internalDate UInt64
+        "The internal message creation timestamp (epoch ms), which determines ordering in the inbox. For normal SMTP-received email, this represents the time the message was originally accepted by Google, which is more reliable than the Date header. However, for API-migrated mail, it can be configured by client to be based on the Date header."
+    payload MessagePayload
+        "The parsed email structure in the message parts."
+    sizeEstimate UInt64
+        "Estimated size in bytes of the message."
+    raw Bytes
+        "The entire email message in an RFC 2822 formatted and base64url encoded string. Returned in messages.get and drafts.get responses when the format=RAW parameter is supplied."
+
+struct MessageListRes
+    messages List(MessageResource)
+        "List of messages."
+    nextPageToken String
+        "Token to retrieve the next page of results in the list."
+    resultSizeEstimate UInt64
+        "Estimated total number of results."
+
+
+struct BatchDeleteBodyArg
+    ids gmail.IdList
+
+route delete (gmail.IdArg, Void, Void)
+    "Deletes message"
+    attrs
+        style = "delete"
+
+route get (gmail.IdArg, MessageResource, Void)
+    "Get the specified message"
+    attrs
+        style = "get"
+
+route list (gmail.ListArg, MessageListRes, Void)
+    "Get messages list"
+    attrs
+        style = "get"
+
+
+
+route modify (gmail.ModifyMessageArg, MessageResource, Void)
+    "Modifies the labels on the specified message."
+    attrs
+        style = "postGmailB"
+
+route batchModify (gmail.BatchModifyMessageArg, Void, Void)
+    "Modifies the labels on list of specified messages."
+    attrs
+        style = "postGmailB2Empty"
+
+
+route send (gmail.SendMimeMessageArg, MessageResource, Void)
+    "Sends the specified message to the recipients in the To, Cc, and Bcc headers. "
+    attrs
+        style = "postGmailB"
+#        style = "rfc822Upload"
+
+
+route trash (gmail.TrashMessageArg, Void, Void)
+    "Moves the specified message to the trash."
+    attrs
+        style = "post"
+
+route untrash (gmail.UntrashMessageArg, Void, Void)
+    "Removes the specified message from the trash."
+    attrs
+        style = "post"
+
+#route importMessage (gmail.ImportMessageArg, MessageResource, MessageResource)
+#    "Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message."
+#    attrs
+#        style = "rfc822Upload"
+#
+#route insert (gmail.InsertMessageArg, MessageResource, MessageResource)
+#    "Directly inserts a message into only this user's mailbox similar to IMAP APPEND, bypassing most scanning and classification."
+#    attrs
+#        style = "rfc822Upload"
+#
+
+
+#route batchDelete(gmail.BatchDeleteMessageArg, Void, BatchDeleteBodyArg)
+#    "Deletes many messages by message ID. Provides no guarantees that messages were not already deleted or even existed at all."
+#    attrs
+#        style = "post"
+
+
+

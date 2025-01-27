@@ -1,0 +1,9 @@
+set sname = `uname -s| tr "[a-z]" "[A-Z]"|awk '{print substr($0,0,6)}'`
+echo "under:"$sname
+
+
+setenv GVZ_CODE  ../graphviz-2.34.0
+setenv GVZ_INSTALL_PATH  ../GV-2.34
+
+setenv ARD_GRAPHVIZ_LIB_DIRECTORIES "gvc cgraph common pathplan xdot cdt label pack ortho patchwork osage sparse rbtree neatogen twopigen circogen fdpgen sfdpgen dotgen gvplugin_core gvplugin_dot_layout gvplugin_neato_layout src"
+

@@ -1,0 +1,30 @@
+namespace gtask
+
+alias Id = String(min_length=1)
+alias GoogleTimestamp = Timestamp("%Y-%m-%dT%H:%M:%SZ")
+
+struct TasklistsListArg
+    "list tasklist"
+
+struct TaskListArg
+    "list tasks"
+
+struct TaskListIdArg
+    "tasklist by id"
+
+struct TaskListContainerIdArg
+    "tasklist by id"
+
+struct TaskListClearArg
+    "tasklist by id"
+
+struct TaskInsertArg
+    "insert a task"
+
+struct TaskMoveArg
+    "move a task"
+
+
+struct TaskIdArg
+    "task by id"
+

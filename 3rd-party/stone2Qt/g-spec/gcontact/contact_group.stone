@@ -1,0 +1,33 @@
+namespace contact_group
+    "Google contact groups namespace for data types and endpoint"
+
+import gcontact
+
+route list (gcontact.ContactGroupListArg, gcontact.GroupList, Void)
+    "Returns all contact groups for a user as a list or one group details if groupid is specified"
+    attrs
+        style = "getContactGroup"
+
+route create (gcontact.CreateContactGroupArg, gcontact.GroupList, Void)
+    "Create a new contacts group"
+    attrs
+        style = "postContactGroupB"
+
+
+route update (gcontact.UpdateContactGroupArg, gcontact.GroupList, Void)
+    "Update contacts group"
+    attrs
+        style = "putContactGroupB"
+
+
+route deleteContactGroup (gcontact.DeleteContactGroupArg, Void, Void)
+    "Delete contact group"
+    attrs
+        style = "deleteContactGroupB"
+
+
+route batch (gcontact.BatchGroupArg, gcontact.BatchGroupList, Void)
+    "Send a batch request for operations on contact groups"
+    attrs
+        style = "postContactGroupBatchB"
+

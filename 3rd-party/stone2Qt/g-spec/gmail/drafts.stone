@@ -1,0 +1,31 @@
+namespace drafts
+    "Gmail drafts namespace for data types and endpoint"
+
+import gmail
+import messages
+
+struct DraftResource
+    id gmail.Id
+        "The immutable ID of the draft."
+    message messages.MessageResource
+        "The message content of the draft."
+
+struct DraftListRes
+    drafts List(DraftResource)
+        "List of drafts."
+    nextPageToken String
+        "Token to retrieve the next page of results in the list."
+    resultSizeEstimate UInt64
+        "Estimated total number of results."
+
+
+route list (gmail.DraftListArg, DraftListRes, Void)
+    "Get drafts list"
+    attrs
+        style = "get"
+
+route get (gmail.IdArg, DraftResource, Void)
+    "Get the specified draft"
+    attrs
+        style = "get"
+

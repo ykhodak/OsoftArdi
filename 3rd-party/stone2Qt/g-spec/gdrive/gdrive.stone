@@ -1,0 +1,79 @@
+namespace gdrive
+
+alias Id = String(min_length=1)
+alias GoogleTimestamp = Timestamp("%Y-%m-%dT%H:%M:%SZ")
+
+struct AboutArg
+    "About messages"
+
+struct FileListArg
+    "File List"
+
+struct GetFileArg
+    "File Id argument"
+
+struct DownloadFileArg
+    "File Id argument"
+
+struct CopyFileArg
+    "Copy file argument"
+
+struct RenameFileArg
+    "Rename file argument"
+
+struct MoveFileArg
+    "Move file argument"
+
+#struct MultipartUploadFileArg
+#    "Upload file argument"
+
+struct DeleteFileArg
+    "Delete file argument"
+
+struct EmptyTrashArg
+    "EmptyTrash argument"
+
+struct CreateFileArg
+    "Create file argument"
+
+struct CreateFolderArg
+    "Create folder argument"
+
+struct UpdateFileArg
+    "Update file argument"
+
+struct PermissionArg
+    "Get/delete permission argument"
+
+struct PermissionListArg
+    "List permission argument"
+
+struct CreatePermissionArg
+    "Create permission argument"
+
+struct CreateCommentArg
+    "Create comment argument"
+
+struct GetCommentArg
+    "Get comment argument"
+
+struct DeleteCommentArg
+    "Delete comment argument"
+
+struct CommentListArg
+    "list comments argument"
+
+struct GenerateIdArg
+    "generateIds command argument"
+
+struct GetRevisionArg
+    "RevisionId argument"
+
+struct DeleteRevisionArg
+    "RevisionId argument"
+
+struct ListRevisionArg
+    "FileId argument"
+
+struct UpdateRevisionArg
+    "Update revision argument"

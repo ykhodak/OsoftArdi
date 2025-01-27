@@ -1,0 +1,92 @@
+namespace revisions
+    "Google GDrive revisions namespace"
+
+import gdrive
+
+struct RevisionUser
+    displayName String
+        "A plain text displayable name for this user."
+    kind String = "drive#user"
+        "Identifies what kind of resource this is. Value: the fixed string drive#user."
+    photoLink String
+        "A link to the user's profile photo, if available."
+    me Boolean
+        "Whether this user is the requesting user."
+    permissionId String
+        "The user's ID as visible in Permission resources."
+    emailAddress String
+        "The email address of the user. This may not be present in certain contexts if the user has not made their email address visible to the requester."
+
+
+struct RevisionResource
+    id String
+        "The ID of the revision."
+    kind String = "drive#revision"
+        "Identifies what kind of resource this is. Value: the fixed string drive#revision."
+    mimeType String
+        "The MIME type of the revision."
+    modifiedTime gdrive.GoogleTimestamp
+        "The last time the revision was modified  (RFC 3339 date-time)."
+    keepForever Boolean
+        "Whether to keep this revision forever, even if it is no longer the head revision. If not set, the revision will be automatically purged 30 days after newer content is uploaded. This can be set on a maximum of 200 revisions for a file. This field is only applicable to files with binary content in Drive."
+    published Boolean
+        "Whether this revision is published. This is only applicable to Google Docs."
+    publishAuto Boolean
+        "Whether subsequent revisions will be automatically republished. This is only applicable to Google Docs."
+    publishedOutsideDomain Boolean
+        "Whether this revision is published outside the domain. This is only applicable to Google Docs."
+    lastModifyingUser RevisionUser
+        "The last user to modify this revision."
+    originalFilename String
+        "The original filename used to create this revision. This is only applicable to files with binary content in Drive."
+    md5Checksum String
+        "The MD5 checksum of the revision's content. This is only applicable to files with binary content in Drive."
+    size UInt64
+        "The size of the revision's content in bytes. This is only applicable to files with binary content in Drive."
+
+struct RevisionResourceCollection
+    nextPageToken String
+        "The page token for the next page of revisions. This will be absent if the end of the revisions list has been reached. If the token is rejected for any reason, it should be discarded, and pagination should be restarted from the first page of results."
+    kind String = "drive#revisionList"
+        "This is always drive#revisionList."
+    files List(RevisionResource)
+        "The list of revisions. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched."
+
+struct UpdateRevisionDetails
+    keepForever Boolean
+        "Whether to keep this revision forever, even if it is no longer the head revision. If not set, the revision will be automatically purged 30 days after newer content is uploaded. This can be set on a maximum of 200 revisions for a file. This field is only applicable to files with binary content in Drive."
+    published Boolean
+        "Whether this revision is published. This is only applicable to Google Docs."
+    publishAuto Boolean
+        "Whether subsequent revisions will be automatically republished. This is only applicable to Google Docs."
+    publishedOutsideDomain Boolean
+        "Whether this revision is published outside the domain. This is only applicable to Google Docs."
+
+
+route list (gdrive.ListRevisionArg, RevisionResourceCollection, Void)
+    "Lists a file's revisions"
+    attrs
+        style = "getDrive"
+
+route get (gdrive.GetRevisionArg, RevisionResource, Void)
+    "Gets a revision's metadata or content by ID"
+    attrs
+        style = "getDrive"
+
+route delete (gdrive.DeleteRevisionArg, Void, Void)
+    "Permanently deletes a revision. This method is only applicable to files with binary content in Drive. "
+    attrs
+        style = "deleteDrive"
+
+
+route update (gdrive.UpdateRevisionArg, RevisionResource, Void)
+    "Updates a revision with patch semantics."
+    attrs
+        style = "updateDrive"
+
+
+
+
+
+
+

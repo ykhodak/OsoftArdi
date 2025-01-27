@@ -1,0 +1,21 @@
+namespace errors
+    "Gmail namespace for errors data types"
+
+import gmail
+
+struct ErrorPart
+    domain String
+        "domain - global"
+    reason String
+        "reason - badRequest, authError etc."
+    message String
+        "message details"
+
+struct ErrorInfo
+    errors List(ErrorPart)
+        "groups of error details"
+    code UInt64
+        "HTTP response code"
+    message String
+        "Details of the error."
+

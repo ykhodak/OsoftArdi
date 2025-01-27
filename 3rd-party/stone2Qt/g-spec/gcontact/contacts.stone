@@ -1,0 +1,47 @@
+namespace contacts
+    "Google contacts namespace for data types and endpoint"
+
+import gcontact
+
+route list (gcontact.ContactListArg, gcontact.ContactList, Void)
+    "Returns all contacts for a user as a list or one contact details if contactid is specified"
+    attrs
+        style = "getContact"
+
+
+route create (gcontact.CreateContactArg, gcontact.ContactList, Void)
+    "Create a new contact"
+    attrs
+        style = "postContactB"
+
+route update (gcontact.UpdateContactArg, gcontact.ContactList, Void)
+    "Update contact"
+    attrs
+        style = "putContactB"
+
+route deleteContact (gcontact.DeleteContactArg, Void, Void)
+    "Delete contact"
+    attrs
+        style = "deleteContactB"
+
+route getContactPhoto (gcontact.DownloadPhotoArg, Void, Void)
+    "Get contact photo content."
+    attrs
+        style = "downloadContactPhoto"
+
+route uploadContactPhoto (gcontact.UploadPhotoArg, Void, Void)
+    "Add/Update contact photo content."
+    attrs
+        style = "uploadContactPhoto"
+
+
+
+route deleteContactPhoto (gcontact.DeletePhotoArg, Void, Void)
+    "Delete contact photo"
+    attrs
+        style = "deleteContactPhotoB"
+
+route batch (gcontact.BatchContactArg, gcontact.BatchContactList, Void)
+    "Send a batch request for operations on contacts"
+    attrs
+        style = "postContactBatchB"

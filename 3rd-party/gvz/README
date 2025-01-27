@@ -1,0 +1,35 @@
+building graphviz libraries using qmake
+========================================
+
+1.get latest graphviz source (put it into $HOME/projects/ariadne/3rd-party/graphviz.xxx)
+2.run ./configure/make/make install (cd  graphviz.xxx before)
+
+*we configure graphviz as static library and then merge static libs into one "so" file. This file should be deployed along with the binaries
+
+./configure --prefix=$HOME/projects/ariadne/3rd-party/GV-2.34 --with-codegens=no --with-cgraph=yes --with-expat=no --with-fontconfig=no --with-freetype2=no --with-glade=no --with-libgd=no --enable-shared=no --enable-static=yes --enable-ltdl=no --enable-swig=no --enable-java=no --enable-python=no --enable-perl=no --enable-tcl=no 
+
+*osx - additionaly you have comment out #define HAVE_LIBZ 1 in config.h
+
+make
+make install
+
+
+3.cd to this folder
+4.change gvz.envs and set 
+- GVZ_CODE as path to the graphviz source code directory
+- GVZ_INSTALL_PATH as path to the graphviz install directory
+
+5.run make-gvz.csh
+6.the libraries will be generated in "lib" folder
+
+
+=====================
+if(!isEmpty( ARD_GRAPHVIZ )){
+  win32{
+	LIBS += -L$$LIB3RD -lgraphviz
+  }
+  unix{
+        LIBS += -L$$LIB3RD -lgraphviz-static
+  }
+}
+

@@ -1,0 +1,54 @@
+namespace permissions
+    "Google GDrive permissions namespace"
+
+import gdrive
+import about
+
+struct ResourcePermission
+    id String
+        "The ID of this permission. This is a unique identifier for the grantee, and is published in User resources as permissionId."
+    kind String = "drive#permission"
+        "This is always drive#permission."
+    type String
+        "The type of the grantee. Valid values are: user group domain anyone"
+    emailAddress String
+        "The email address of the user or group to which this permission refers."
+    domain String
+        "The domain to which this permission refers."
+    role String
+        "The role granted by this permission. Valid values are: owner writer commenter reader"
+    allowFileDiscovery Boolean
+        "Whether the permission allows the file to be discovered through search. This is only applicable for permissions of type domain or anyone."
+    displayName String
+        "A displayable name for users, groups or domains."
+    photoLink String
+        "A link to the user's profile photo, if available."
+    expirationTime gdrive.GoogleTimestamp
+        "The time at which this permission will expire (RFC 3339 date-time)."
+
+struct PermissionResourcesCollection
+    kind String = "drive#permissionList"
+        "This is always drive#permissionList."
+    permissions List(ResourcePermission)
+        "The full list of permissions."
+
+route get (gdrive.PermissionArg, ResourcePermission, Void)
+    "Get permission metadata."
+    attrs
+        style = "getDrive"
+
+route delete (gdrive.PermissionArg, Void, Void)
+    "Delete permission "
+    attrs
+        style = "deleteDrive"
+
+route create (gdrive.CreatePermissionArg, ResourcePermission, ResourcePermission)
+    "Create new permission"
+    attrs
+        style = "postDrive"
+
+route list (gdrive.PermissionListArg, PermissionResourcesCollection, Void)
+    "Lists a file's permissions."
+    attrs
+        style = "getDrive"
+

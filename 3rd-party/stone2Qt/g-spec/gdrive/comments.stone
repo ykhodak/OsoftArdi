@@ -1,0 +1,98 @@
+namespace comments
+    "Google GDrive comments namespace"
+
+import gdrive
+import about
+
+struct User
+    displayName String
+        "A plain text displayable name for this user."
+    kind String = "drive#user"
+        "This is always drive#user"
+    photoLink String
+        "A link to the user's profile photo, if available."
+    me Boolean
+        "Whether this user is the requesting user."
+    permissionId String
+        "The user's ID as visible in Permission resources."
+    emailAddress String
+        "The email address of the user. This may not be present in certain contexts if the user has not made their email address visible to the requester."
+
+struct QuotedFileContent
+    mimeType String
+        "The MIME type of the quoted content."
+    value String
+        "The quoted content itself. This is interpreted as plain text if set through the API."
+
+struct Reply
+    id String
+        "The ID of the reply."
+    kind String = "drive#reply"
+        "This is always drive#reply"
+    createdTime gdrive.GoogleTimestamp
+        "The time at which the reply was created (RFC 3339 date-time)."
+    modifiedTime gdrive.GoogleTimestamp
+        "The last time the reply was modified (RFC 3339 date-time)."
+    author User
+        "The user who created the reply."
+    htmlContent String
+        "The content of the reply with HTML formatting."
+    content String
+        "The plain text content of the reply. This field is used for setting the content, while htmlContent should be displayed. This is required on creates if no action is specified."
+    deleted Boolean
+        "Whether the reply has been deleted. A deleted reply has no content."
+    action String
+        "The action the reply performed to the parent comment. Valid values are: resolve reopen"
+
+struct Comment
+    id String
+        "The ID of the comment."
+    kind String = "drive#comment"
+        "This is always drive#comment."
+    createdTime gdrive.GoogleTimestamp
+        "The time at which the comment was created (RFC 3339 date-time)."
+    modifiedTime gdrive.GoogleTimestamp
+        "The last time the comment or any of its replies was modified (RFC 3339 date-time)."
+    author User
+        "The user who created the comment."
+    htmlContent String
+        "The content of the comment with HTML formatting."
+    content String
+        "The plain text content of the comment. This field is used for setting the content, while htmlContent should be displayed."
+    deleted Boolean = false
+        "Whether the comment has been deleted. A deleted comment has no content."
+    resolved Boolean = false
+        "Whether the comment has been resolved by one of its replies."
+    quotedFileContent QuotedFileContent
+        "The file content to which the comment refers, typically within the anchor region. For a text file, for example, this would be the text at the location of the comment."
+    anchor String
+        "A region of the document represented as a JSON string. See anchor documentation for details on how to define and interpret anchor properties."
+    replies List(Reply)
+        "The full list of replies to the comment in chronological order."
+
+struct CommentListResult
+    nextPageToken String
+        "The page token for the next page of comments. This will be absent if the end of the comments list has been reached."
+    kind String = "drive#commentList"
+        "This is always drive#commentList."
+    comments List(Comment)
+
+route create (gdrive.CreateCommentArg, Comment, Comment)
+    "Create new Comment"
+    attrs
+        style = "postDrive"
+
+route delete (gdrive.DeleteCommentArg, Void, Void)
+    "Delete a Comment"
+    attrs
+        style = "deleteDrive"
+
+route get (gdrive.GetCommentArg, Comment, Void)
+    "Get comment metadata."
+    attrs
+        style = "getDrive"
+
+route list (gdrive.CommentListArg, CommentListResult, Void)
+    "Lists a file's comments."
+    attrs
+        style = "getDrive"
